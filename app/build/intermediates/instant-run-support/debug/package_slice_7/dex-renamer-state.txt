@@ -1,0 +1,4 @@
+#Wed Apr 11 19:11:38 IST 2018
+base.0=C\:\\Users\\Lianding Khuptong\\design-villa\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex
