@@ -1,13 +1,13 @@
 package udacity.designvilla;
 
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.content.Intent;
-        import android.os.Handler;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-        import com.example.android.splashscreenjava.R;
+import com.example.android.splashscreenjava.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_main);
 
         new android.os.Handler().postDelayed(new Runnable() {
