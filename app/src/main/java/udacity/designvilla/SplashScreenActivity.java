@@ -12,7 +12,7 @@ import com.example.android.splashscreenjava.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    public final static int TIME_OUT = 2000;
+    public final static int TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,17 +20,18 @@ public class SplashScreenActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
+        ImageView logo = findViewById(R.id.imageView);
+        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
+        logo.startAnimation(bounce);
+
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(R.anim.sliding_in, R.anim.sliding_out);
             }
         }, TIME_OUT);
-
-        ImageView logo = findViewById(R.id.imageView);
-        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
-        logo.startAnimation(bounce);
     }
 }
