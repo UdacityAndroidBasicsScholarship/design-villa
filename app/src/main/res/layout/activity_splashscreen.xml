@@ -2,18 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/match_parent"
+    android:background="@drawable/bg_one"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:src="@drawable/second_logo"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/one_nine_six_dips"
-        android:text="@string/app_name"
-        android:textSize="@dimen/forty_sp" />
+        android:layout_centerVertical="true" />
 </RelativeLayout>
