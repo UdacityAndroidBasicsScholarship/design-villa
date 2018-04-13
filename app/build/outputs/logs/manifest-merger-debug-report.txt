@@ -1,154 +1,154 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1b14114f0af2ea5c13735b7e9832e852\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/ali/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fa736f24e0c8b3188dee64239f71b04b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:17:1-30:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:3:5-51
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:5:5-20:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1b14114f0af2ea5c13735b7e9832e852\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1b14114f0af2ea5c13735b7e9832e852\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:24:5-28:19
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/ali/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fa736f24e0c8b3188dee64239f71b04b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/ali/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fa736f24e0c8b3188dee64239f71b04b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:11:9-40
 activity#udacity.designvilla.MainActivity
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:12:19-66
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:12:19-66
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:16:27-74
 activity#udacity.designvilla.SecondActivity
-ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:19:9-80
+ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:19:9-80
 	android:name
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml:19:19-68
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml:19:19-68
 uses-sdk
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1b14114f0af2ea5c13735b7e9832e852\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1b14114f0af2ea5c13735b7e9832e852\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/ali/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fa736f24e0c8b3188dee64239f71b04b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/ali/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fa736f24e0c8b3188dee64239f71b04b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:20:5-22:41
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lianding Khuptong\design-villa\app\src\main\AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		ADDED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
+		INJECTED from /DRIVE_D/udacity/collab/design-villa/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7fa64edcbcff775082bc59d8a2b16ecf\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\fa2407b31ddf57f5e0ccd005ed23b7d9\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9a8fd6ab8c7815564e8fa53db307f902\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6e636928357c48749537e19a6d9f7e11\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\88ded7cf57ac446402765858d97a0d0a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\7ca63c1c5ebbeff3908aa8299f9c88b8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a603f25fd0331073e1d93e6080de8fe9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\dec8190823423e45b1f82d5a877165f5\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/c1d1edd0dc54a7eed54fd8e3112c50d1/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/388c4e2ad2278f5bbc479fb338ae3a47/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d7828db3547b0daae8a7b8fb2cd16871/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a126b954b3b63c1ccb015352f8d3de00/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/131c04ac108a19e31a0df752916bd8c2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/686831031ca58092f727b72a227de4e0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2847390e83868bc1ce95cc12020a41b6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/14704c499cff8db2a9233ed685e094fe/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\24506af7ed845c9ee09c46ccff5f08b9\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/AndroidManifest.xml:27:13-51
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Lianding Khuptong\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74ce289e65f4f2fc97e786bd318baa25\AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ali/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/41d6cb7d80000725c0071103898811b6/AndroidManifest.xml:26:13-58

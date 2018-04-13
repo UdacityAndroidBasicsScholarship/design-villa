@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Lianding Khuptong\\design-villa\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/DRIVE_D/udacity/collab/design-villa/C:\\Users\\Lianding Khuptong\\design-villa\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lianding Khuptong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\24506af7ed845c9ee09c46ccff5f08b9\\res\\values-land\\values-land.xml",
+                    "source": "/DRIVE_D/udacity/collab/design-villa/C:\\Users\\Lianding Khuptong\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\24506af7ed845c9ee09c46ccff5f08b9\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/DRIVE_D/udacity/collab/design-villa/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/ali/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/12ada407b8841afb3b685744ada12f17/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
