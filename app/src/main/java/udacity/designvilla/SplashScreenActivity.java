@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.android.splashscreenjava.R;
 
@@ -20,7 +19,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
-        ImageView logo = findViewById(R.id.imageView);
+        ImageView logo = findViewById(R.id.splash_logo);
         Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
         logo.startAnimation(bounce);
 

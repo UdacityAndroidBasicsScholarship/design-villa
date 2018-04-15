@@ -6,12 +6,11 @@
     android:background="@drawable/bg_one"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
-
     <ImageView
-        android:src="@drawable/second_logo"
-        android:id="@+id/imageView"
+        android:id="@+id/splash_logo"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:src="@drawable/second_logo" />
 </RelativeLayout>
