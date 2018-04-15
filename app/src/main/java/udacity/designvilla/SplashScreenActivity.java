@@ -1,10 +1,10 @@
 package udacity.designvilla;
 
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.content.Intent;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-        import com.example.android.splashscreenjava.R;
+import com.example.android.splashscreenjava.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -12,8 +12,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.FullScreen);
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
         new android.os.Handler().postDelayed(new Runnable() {

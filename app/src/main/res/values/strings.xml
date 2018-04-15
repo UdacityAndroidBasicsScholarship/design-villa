@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Design Villa</string>
     <string name="design_villa">Design Villa</string>
+    <string name="google_logo">Google Logo</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="register_here">Register Here</string>
     <string name="login_activity">Login Activity</string>
 </resources>
