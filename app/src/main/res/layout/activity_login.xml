@@ -5,11 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="udacity.designvilla.LoginActivity"
-    android:background="@drawable/bg_seven">
+    android:background="@drawable/bg_five">
+
+    <ImageView
+        android:src="@drawable/third_logo"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <com.shobhitpuri.custombuttons.GoogleSignInButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_margin="20sp"
         android:layout_centerInParent="true"
         android:text="@string/google_sign_up"
         android:textSize="15sp"
