@@ -17,13 +17,19 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_splashscreen);
 
-        ImageView logo = findViewById(R.id.imageView);
-        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
-        logo.startAnimation(bounce);
+        // Declaration of ImageView containing App Name in the Splash screen
+        ImageView namelogo = findViewById(R.id.name_ImageView);
 
+        // Declaration of Animation effect in splash screen
+        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
+
+        // To give bounce effect to App name in Splash screen
+        namelogo.startAnimation(bounce);
+
+        //Once animation is complete Take the user to Login Screen
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -35,3 +41,5 @@ public class SplashScreenActivity extends AppCompatActivity {
         }, TIME_OUT);
     }
 }
+
+
