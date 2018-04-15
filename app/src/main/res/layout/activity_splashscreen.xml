@@ -8,6 +8,7 @@
 
     <ImageView
         android:id="@+id/splash_logo"
+        android:src="@drawable/second_logo"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
