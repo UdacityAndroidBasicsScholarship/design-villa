@@ -1,17 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context="udacity.designvilla.LoginActivity">
 
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/swipe_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:arc_cropDirection="outside"
+        app:arc_height="30dp"
+        app:arc_position="bottom">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/sample_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="330sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/tag_line"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="150dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="16dp"
+            android:text="@string/swipe_down_to_login"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/made_by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
-</RelativeLayout>
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/made_by"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</FrameLayout>

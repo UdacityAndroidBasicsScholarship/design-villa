@@ -2,4 +2,8 @@
     <string name="app_name">Design Villa</string>
     <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
+    <string name="swipe_down_to_login">Swipe down to Login</string>
+    <string name="logo">Logo</string>
+    <string name="made_by" />
+    <string name="tag_line">Home of designers</string>
 </resources>
