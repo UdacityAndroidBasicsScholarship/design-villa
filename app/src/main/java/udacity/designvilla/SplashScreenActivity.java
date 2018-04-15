@@ -10,15 +10,20 @@ import android.widget.TextView;
 
 import com.example.android.splashscreenjava.R;
 
+import udacity.designvilla.Util.Tools;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
-    public final static int TIME_OUT = 2000;
+    public final static int TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_splashscreen);
+        //customize the status bar color and light
+        Tools.setSystemBarColor(this, android.R.color.white);
+        Tools.setSystemBarLight(this);
 
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
