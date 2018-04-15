@@ -5,13 +5,50 @@
     android:layout_height="match_parent"
     tools:context="udacity.designvilla.LoginActivity">
 
+
+    <ImageView
+        android:id="@+id/image_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mdbg31" />
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Login activity"
+        android:textSize="60sp"
+        android:textStyle="italic" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:layout_marginTop="11dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rfvf" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/rouund_button"
+        android:text="Google +"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+
+
 </RelativeLayout>
+
