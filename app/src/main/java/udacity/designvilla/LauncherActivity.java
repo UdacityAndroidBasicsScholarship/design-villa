@@ -4,8 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,18 +13,16 @@ import com.example.android.splashscreenjava.R;
 import com.github.florent37.shapeofview.shapes.ArcView;
 
 
-public class LauncherActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
+public class LauncherActivity extends AppCompatActivity /*implements GestureDetector.OnGestureListener*/ {
 
-
-    int transitionTime;
 
     TextView madeBy;
     TextView tag_line;
     TextView swipe_message;
     ImageView logo;
-    ArcView swipable;
+    ArcView arcView;
 
-    GestureDetector gestureDetector;
+//    GestureDetector gestureDetector;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -32,23 +30,23 @@ public class LauncherActivity extends AppCompatActivity implements GestureDetect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        transitionTime = 1500;
-
         logo = findViewById(R.id.logo);
         tag_line = findViewById(R.id.tag_line);
         madeBy = findViewById(R.id.made_by);
         swipe_message = findViewById(R.id.swipe);
-        swipable = findViewById(R.id.swipe_screen);
+        arcView = findViewById(R.id.swipe_screen);
 
         String madeByString = "Made with ❤ by Codevegers";
 
         madeBy.setText(madeByString);
-        logo.setImageResource(R.drawable.background_abstract);
+        logo.setImageResource(R.drawable.sample_logo);
         tag_line.setText(R.string.tag_line);
         swipe_message.setText(R.string.swipe_down_to_login);
 
+        startAnimationLaunch();
 
-        swipable.setOnTouchListener(new OnSwipeTouchListener(this) {
+
+        arcView.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
             public void onSwipeDown() {
                 Intent intent = new Intent(LauncherActivity.this, SignInActivity.class);
@@ -56,45 +54,81 @@ public class LauncherActivity extends AppCompatActivity implements GestureDetect
             }
         });
 
-        gestureDetector = new GestureDetector(this, this);
+//        gestureDetector = new GestureDetector(this, this);
+
+    }
+//
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        gestureDetector.onTouchEvent(event);
+//        return super.onTouchEvent(event);
+//    }
+//
+//    @Override
+//    public boolean onDown(MotionEvent motionEvent) {
+//        onDrawerTouchAnimation();
+//        return true;
+//    }
+//
+//    @Override
+//    public void onShowPress(MotionEvent motionEvent) {
+//
+//    }
+//
+//    @Override
+//    public boolean onSingleTapUp(MotionEvent motionEvent) {
+//        return false;
+//    }
+//
+//    @Override
+//    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+//        return false;
+//    }
+//
+//    @Override
+//    public void onLongPress(MotionEvent motionEvent) {
+//
+//    }
+//
+//    @Override
+//    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+//        return false;
+//    }
+//
+//    private void onDrawerTouchAnimation(){
+//
+//    }
+
+    private void startAnimationLaunch() {
+        Animation animationTray = AnimationUtils.loadAnimation(this, R.anim.animation_launcher);
+        Animation elements = AnimationUtils.loadAnimation(this, R.anim.animation_on_launcher_start);
+
+//        animationTray.setAnimationListener(new Animation.AnimationListener() {
+//            @Override
+//            public void onAnimationStart(Animation animation) {
+//
+//            }
+//
+//            @Override
+//            public void onAnimationRepeat(Animation animation) {
+//
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animation animation) {
+//
+//            }
+//        });
+
+        madeBy.clearAnimation();
+        arcView.clearAnimation();
+
+        madeBy.startAnimation(elements);
+        arcView.startAnimation(animationTray);
 
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        gestureDetector.onTouchEvent(event);
-        return super.onTouchEvent(event);
-    }
 
-    @Override
-    public boolean onDown(MotionEvent motionEvent) {
-        return false;
-    }
-
-    @Override
-    public void onShowPress(MotionEvent motionEvent) {
-
-    }
-
-    @Override
-    public boolean onSingleTapUp(MotionEvent motionEvent) {
-        return false;
-    }
-
-    @Override
-    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-        return false;
-    }
-
-    @Override
-    public void onLongPress(MotionEvent motionEvent) {
-
-    }
-
-    @Override
-    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-        return false;
-    }
 }
 
 
