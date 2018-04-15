@@ -3,15 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
+    <!-- ImageView for Background Image of the App -->
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/two_five_zero_dips"
+        android:id="@+id/splash_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/second_logo" />
+        android:scaleType="fitXY"
+        android:src="@drawable/dv_splash_bg"
+        android:contentDescription="@string/bg_image"
+        />
+
+    <!-- ImageView for Name of the App -->
+
+    <ImageView
+        android:id="@+id/name_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dv_name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:contentDescription="@string/app_name"
+        />
+
 </RelativeLayout>

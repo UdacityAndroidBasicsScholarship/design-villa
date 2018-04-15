@@ -2,4 +2,10 @@
     <string name="app_name">Design Villa</string>
     <string name="login_activity">Login Activity</string>
     <string name="signin_with_gmail">Signin with Gmail</string>
+    <string name="bg_image">Background Image</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="log_in_text">Or Log In with...</string>
 </resources>
