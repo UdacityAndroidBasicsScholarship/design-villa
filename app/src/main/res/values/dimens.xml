@@ -5,4 +5,11 @@
     <dimen name="thirty_sp">30sp</dimen>
     <dimen name="two_one_five_dips">215dp</dimen>
     <dimen name="two_five_zero_dips">250dp</dimen>
+    <dimen name="ninety_dips">90dp</dimen>
+    <dimen name="sixty_sp">60sp</dimen>
+    <dimen name="twenty_dips">20dp</dimen>
+    <dimen name="hundred_dips">100dp</dimen>
+    <dimen name="ten_dips">10dp</dimen>
+    <dimen name="fifty_dips">50dp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
 </resources>
