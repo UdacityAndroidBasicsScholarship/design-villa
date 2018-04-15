@@ -1,30 +1,104 @@
 package udacity.designvilla;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.splashscreenjava.R;
-import com.google.android.gms.common.SignInButton;
+import com.github.florent37.shapeofview.shapes.ArcView;
 
 
-public class LoginActivity extends AppCompatActivity {
+public class LauncherActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
+
+    int transitionTime;
 
     TextView madeBy;
-    SignInButton signInButton;
+    TextView tag_line;
+    TextView swipe_message;
+    ImageView logo;
+    ArcView swipable;
 
+    GestureDetector gestureDetector;
+
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_launcher);
+
+        transitionTime = 1500;
+
+        logo = findViewById(R.id.logo);
+        tag_line = findViewById(R.id.tag_line);
         madeBy = findViewById(R.id.made_by);
+        swipe_message = findViewById(R.id.swipe);
+        swipable = findViewById(R.id.swipe_screen);
 
-        String madeByString = "Made with ❤ by Udacitians";
+        String madeByString = "Made with ❤ by Codevegers";
+
         madeBy.setText(madeByString);
+        logo.setImageResource(R.drawable.background_abstract);
+        tag_line.setText(R.string.tag_line);
+        swipe_message.setText(R.string.swipe_down_to_login);
 
-        signInButton = findViewById(R.id.sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
+
+        swipable.setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeDown() {
+                Intent intent = new Intent(LauncherActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        gestureDetector = new GestureDetector(this, this);
+
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        gestureDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onDown(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent motionEvent) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent motionEvent) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+        return false;
+    }
+}
+
+
+
 
 /*
 
@@ -37,9 +111,9 @@ public class LoginActivity extends AppCompatActivity {
 
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if (account != null){
-            //TODO moveTo(account)
+            // moveTo(account)
         } else {
-            //TODO signIn()
+            // signIn()
         }
 
 
@@ -51,7 +125,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 */
 
-    }
 
 
   /*  @Override
@@ -86,4 +159,3 @@ public class LoginActivity extends AppCompatActivity {
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 */
-}
