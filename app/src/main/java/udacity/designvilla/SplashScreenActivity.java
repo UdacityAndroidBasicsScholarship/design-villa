@@ -28,6 +28,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                //TODO: place a check to see if user is logged in or not and direct him/her to the respective screen
                 Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
