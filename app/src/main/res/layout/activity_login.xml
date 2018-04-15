@@ -3,15 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/maladives"
     tools:context="udacity.designvilla.LoginActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <ImageView
+        android:src="@drawable/third_logo"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+
+    <ImageView
+        android:src="@drawable/googleloginin"
+        android:id="@+id/googleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:layout_margin="70dp"
+        android:layout_alignParentBottom="true"
+        />
 </RelativeLayout>
