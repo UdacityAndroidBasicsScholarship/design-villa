@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Design Villa</string>
-    <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
     <string name="app_version">Version 1.0</string>
     <string name="welcome_msg">Welcome to Design Villa</string>
