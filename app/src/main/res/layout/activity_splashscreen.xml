@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
     android:theme="@style/FullScreen"
+
+    style="@style/match_parent"
+    android:background="@drawable/bg_one"
+
     tools:context="udacity.designvilla.SplashScreenActivity">
 
     <ImageView
@@ -14,5 +19,15 @@
         android:contentDescription="@string/design_villa"
         android:src="@drawable/splash" />
 
+
+
+  
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/second_logo" />
 
 </RelativeLayout>

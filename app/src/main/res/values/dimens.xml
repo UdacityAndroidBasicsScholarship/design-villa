@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="one_fifty_dips">150dp</dimen>
     <dimen name="two_fifty_dips">250dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
@@ -8,4 +9,18 @@
     <dimen name="three_hundred_dips">300dp</dimen>
     <dimen name="sixty_four_dips">64dp</dimen>
     <dimen name="seventy_two_dips">72dp</dimen>
+
+    <dimen name="one_nine_six_dips">196dp</dimen>
+    <dimen name="forty_sp">40dp</dimen>
+    <dimen name="thirty_sp">30sp</dimen>
+    <dimen name="two_one_five_dips">215dp</dimen>
+    <dimen name="two_five_zero_dips">250dp</dimen>
+    <dimen name="ninety_dips">90dp</dimen>
+    <dimen name="sixty_sp">60sp</dimen>
+    <dimen name="twenty_dips">20dp</dimen>
+    <dimen name="hundred_dips">100dp</dimen>
+    <dimen name="ten_dips">10dp</dimen>
+    <dimen name="fifty_dips">50dp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
+
 </resources>
