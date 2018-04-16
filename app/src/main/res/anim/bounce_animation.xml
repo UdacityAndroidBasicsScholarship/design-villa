@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true"
-    android:interpolator="@android:anim/bounce_interpolator">
+    android:interpolator="@android:anim/decelerate_interpolator">
 
     <scale
-        android:duration="2000"
-        android:fromXScale="1.0"
-        android:fromYScale="0.0"
+        android:duration="1500"
+        android:fromXScale="0.3"
+        android:fromYScale="0.3"
         android:toXScale="1.0"
+        android:pivotX="50%p"
+        android:pivotY="20%p"
         android:toYScale="1.0"/>
+
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="0"
+        android:toAlpha="1" />
 
 </set>
