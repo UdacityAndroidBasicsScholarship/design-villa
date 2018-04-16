@@ -15,7 +15,6 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
         //customize the status bar color and light
         Tools.setSystemBarColor(this, android.R.color.white);
