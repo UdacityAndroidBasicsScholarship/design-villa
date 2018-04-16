@@ -20,7 +20,14 @@
             android:layout_height="80dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_twitter" />
+            android:src="@drawable/logos" />
+        <ImageView
+            android:id="@+id/imgView_name"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_name" />
 
         <RelativeLayout
             android:id="@+id/rellay1"
