@@ -8,10 +8,10 @@
 
 
     <ImageView
-        android:src="@drawable/second_logo"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:src="@drawable/second_logo" />
 </RelativeLayout>
