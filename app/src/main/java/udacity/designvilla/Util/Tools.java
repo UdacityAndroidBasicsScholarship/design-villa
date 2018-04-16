@@ -13,6 +13,11 @@ import android.view.WindowManager;
 
 public class Tools {
 
+    /**
+     * Set the status bar color
+     * @param act- Activity
+     * @param color - Color for the status bar
+     */
     public static void setSystemBarColor(Activity act, @ColorRes int color) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = act.getWindow();
@@ -22,6 +27,10 @@ public class Tools {
         }
     }
 
+    /**
+     * Set the status bar light
+     * @param act - Activity
+     */
     public static void setSystemBarLight(Activity act) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             View view = act.findViewById(android.R.id.content);
