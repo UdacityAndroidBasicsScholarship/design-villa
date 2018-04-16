@@ -11,7 +11,7 @@ import com.example.android.splashscreenjava.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    public final static int TIME_OUT = 3000;
+    public final static int TIME_OUT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

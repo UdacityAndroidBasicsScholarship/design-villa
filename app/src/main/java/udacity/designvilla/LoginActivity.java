@@ -19,9 +19,6 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,19 +32,12 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
 
-        final ImageView logo = findViewById(R.id.login_logo);
-        logo.setVisibility(View.INVISIBLE);
-        //Delay Animation by 1 second
-        new Timer().schedule(
-                new TimerTask() {
-                    @Override
-                    public void run() {
-                        Animation fade = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
-                        logo.startAnimation(fade);
-                    }
-                },
-                1000
-        );
+        ImageView logo = findViewById(R.id.login_logo);
+        logo.setVisibility(View.INVISIBLE); //Hide logo till animation starts
+
+        //Logo fades in
+        Animation fade = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
+        logo.startAnimation(fade);
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
