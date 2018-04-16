@@ -2,16 +2,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/login_screen_relative_layout"
     android:layout_height="match_parent"
-    tools:context="udacity.designvilla.LoginActivity">
+    tools:context="udacity.designvilla.LoginActivity"
+    android:background="@drawable/animation_list">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/welcome_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:fontFamily="casual"
+        android:paddingTop="30dp"
+        android:text="Welcome To"
+        android:textColor="#0f0"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_textview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textSize="80dp"
+        android:textColor="#bbb"
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:id="@+id/transitions_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in +"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_red_background"
+            />
+<!--This is hidden textview  it should be used when we are trying to connect to user account
+    either using firebase or google play services -->
+        <TextView
+            android:id="@+id/logging_in_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Logging in ..."
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
 </RelativeLayout>

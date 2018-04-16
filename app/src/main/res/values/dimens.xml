@@ -5,4 +5,8 @@
     <dimen name="thirty_sp">30sp</dimen>
     <dimen name="two_one_five_dips">215dp</dimen>
     <dimen name="two_five_zero_dips">250dp</dimen>
+
+
+
+    <integer name="login_color_gradient_speed_animation">6000</integer>
 </resources>

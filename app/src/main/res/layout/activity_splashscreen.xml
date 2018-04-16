@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
+    android:background="@drawable/background"
     tools:context="udacity.designvilla.SplashScreenActivity">
+
 
 
     <ImageView
@@ -13,5 +14,27 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/tagline_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="            -Heven for Designers"
+        android:layout_below="@id/imageView"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pb_loading"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/my_progress_bar" />
 </RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/gradient1"
+        android:duration="@integer/login_color_gradient_speed_animation" />
+    <item
+        android:drawable="@drawable/gradient2"
+        android:duration="@integer/login_color_gradient_speed_animation" />
+    <item
+        android:drawable="@drawable/gradient3"
+        android:duration="@integer/login_color_gradient_speed_animation" />
+ <!--   <item
+        android:drawable="@drawable/gradient4"
+        android:duration="@integer/login_color_gradient_speed_animation" />
+    <item
+        android:drawable="@drawable/gradient5"
+        android:duration="@integer/login_color_gradient_speed_animation" />
+    <item
+        android:drawable="@drawable/gradient6"
+        android:duration="@integer/login_color_gradient_speed_animation" />-->
+</animation-list>
