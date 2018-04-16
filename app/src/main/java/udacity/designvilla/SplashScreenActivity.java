@@ -24,6 +24,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         Tools.setSystemBarColor(this, android.R.color.white);
         Tools.setSystemBarLight(this);
 
+        ImageView logo = findViewById(R.id.imageView);
+        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
+        logo.startAnimation(bounce);
+
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -31,11 +35,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(R.anim.sliding_in, R.anim.sliding_out);
             }
         }, TIME_OUT);
-
-        ImageView logo = findViewById(R.id.imageView);
-        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
-        logo.startAnimation(bounce);
     }
 }
