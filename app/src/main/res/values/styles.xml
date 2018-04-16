@@ -8,6 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- FullScreen Theme for SplashScreen and LoginScreen. -->
+    <style name="FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
     <style name="match_parent">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -21,6 +27,7 @@
     <style name="match_parent_wrap_content">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+
     </style>
 
 </resources>
