@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         rellay = (RelativeLayout) findViewById(R.id.rellay);
-        rellay = (RelativeLayout) findViewById(R.id.rellay1);
+        rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
 
         handler.postDelayed(runnable, 3000); //3000 is the timeout for the splash
     }
