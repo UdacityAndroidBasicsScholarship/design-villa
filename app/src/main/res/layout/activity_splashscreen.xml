@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
+    android:background="@drawable/maladives"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
@@ -13,5 +13,15 @@
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/second_logo" />
+        android:src="@drawable/third_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home of designers"
+        android:layout_below="@id/imageView"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:textColor="#3F51B5"
+        android:layout_centerHorizontal="true"
+        />
 </RelativeLayout>
