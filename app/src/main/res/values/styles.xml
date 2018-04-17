@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="colorPrimary">#BBD2C5</item>
+        <item name="colorPrimaryDark">#536976</item>
+
+    </style>
+
+    <!--Floating label text style-->
+    <style name="MyHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#FFEB3B</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#FBC02D</item>
+        <item name="colorControlActivated">#9E9E9E</item>
+    </style>
+
 </resources>
