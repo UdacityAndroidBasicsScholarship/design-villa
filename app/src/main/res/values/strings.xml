@@ -2,4 +2,6 @@
     <string name="app_name">Design Villa</string>
     <string name="login_activity">Login Activity</string>
     <string name="signin_with_gmail">Signin with Gmail</string>
+    <string name="design_villa">Design Villa</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
 </resources>
