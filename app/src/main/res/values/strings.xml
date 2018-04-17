@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Design Villa</string>
     <string name="login_activity">Login Activity</string>
-    <string name="signin_with_gmail">Signin with Gmail</string>
+    <string name="sign_in">Signin with Google</string>
+    <string name="register">NEW USER? SIGN UP</string>
+    <string name="welcome">Welcome To</string>
 </resources>
