@@ -1,28 +1,33 @@
 package udacity.designvilla;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Slide;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.example.android.splashscreenjava.R;
 import com.github.florent37.shapeofview.shapes.ArcView;
 
 
-public class LauncherActivity extends AppCompatActivity /*implements GestureDetector.OnGestureListener*/ {
+public class LauncherActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
 
-    TextView madeBy;
-    TextView tag_line;
-    TextView swipe_message;
-    ImageView logo;
     ArcView arcView;
+    ImageView logo;
+    TextView swipe_message;
+    TextView madeBy;
 
-//    GestureDetector gestureDetector;
+    GestureDetector gestureDetector;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -30,95 +35,42 @@ public class LauncherActivity extends AppCompatActivity /*implements GestureDete
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
+        arcView = findViewById(R.id.arc_view);
         logo = findViewById(R.id.logo);
-        tag_line = findViewById(R.id.tag_line);
-        madeBy = findViewById(R.id.made_by);
         swipe_message = findViewById(R.id.swipe);
-        arcView = findViewById(R.id.swipe_screen);
+        madeBy = findViewById(R.id.made_by);
 
         String madeByString = "Made with ❤ by Codevegers";
 
         madeBy.setText(madeByString);
         logo.setImageResource(R.drawable.sample_logo);
-        tag_line.setText(R.string.tag_line);
         swipe_message.setText(R.string.swipe_down_to_login);
-
-        startAnimationLaunch();
-
 
         arcView.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
             public void onSwipeDown() {
                 Intent intent = new Intent(LauncherActivity.this, SignInActivity.class);
-                startActivity(intent);
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(LauncherActivity.this).toBundle();
+                startActivity(intent, bundle);
             }
         });
 
-//        gestureDetector = new GestureDetector(this, this);
+        gestureDetector = new GestureDetector(this, this);
+
+        setupWindowAnimations();
+        startAnimationLaunch();
 
     }
-//
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        gestureDetector.onTouchEvent(event);
-//        return super.onTouchEvent(event);
-//    }
-//
-//    @Override
-//    public boolean onDown(MotionEvent motionEvent) {
-//        onDrawerTouchAnimation();
-//        return true;
-//    }
-//
-//    @Override
-//    public void onShowPress(MotionEvent motionEvent) {
-//
-//    }
-//
-//    @Override
-//    public boolean onSingleTapUp(MotionEvent motionEvent) {
-//        return false;
-//    }
-//
-//    @Override
-//    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-//        return false;
-//    }
-//
-//    @Override
-//    public void onLongPress(MotionEvent motionEvent) {
-//
-//    }
-//
-//    @Override
-//    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-//        return false;
-//    }
-//
-//    private void onDrawerTouchAnimation(){
-//
-//    }
+
+    private void setupWindowAnimations() {
+        Slide slide = new Slide();
+        slide.setDuration(400);
+        getWindow().setExitTransition(slide);
+    }
 
     private void startAnimationLaunch() {
         Animation animationTray = AnimationUtils.loadAnimation(this, R.anim.animation_launcher);
         Animation elements = AnimationUtils.loadAnimation(this, R.anim.animation_on_launcher_start);
-
-//        animationTray.setAnimationListener(new Animation.AnimationListener() {
-//            @Override
-//            public void onAnimationStart(Animation animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(Animation animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(Animation animation) {
-//
-//            }
-//        });
 
         madeBy.clearAnimation();
         arcView.clearAnimation();
@@ -126,13 +78,64 @@ public class LauncherActivity extends AppCompatActivity /*implements GestureDete
         madeBy.startAnimation(elements);
         arcView.startAnimation(animationTray);
 
+        animationTray.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+            }
+        });
     }
 
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        gestureDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onDown(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent motionEvent) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent motionEvent) {
+        YoYo.with(Techniques.Bounce)
+                .duration(700)
+                .repeat(0)
+                .playOn(findViewById(R.id.arc_view));
+
+        return true;
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent motionEvent) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+        return false;
+    }
+
 }
-
-
-
 
 /*
 

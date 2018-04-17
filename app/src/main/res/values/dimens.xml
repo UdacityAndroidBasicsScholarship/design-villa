@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="one_nine_six_dips">196dp</dimen>
-    <dimen name="forty_sp">40dp</dimen>
-    <dimen name="thirty_sp">30sp</dimen>
-    <dimen name="two_one_five_dips">215dp</dimen>
-    <dimen name="logo_margin_top">75dp</dimen>
+
     <dimen name="logo_width">250dp</dimen>
     <dimen name="logo_height">250dp</dimen>
-    <dimen name="tag_line_margin_top">330sp</dimen>
+
     <dimen name="margin">16dp</dimen>
+    <dimen name="logo_margin_top">100dp</dimen>
+    <dimen name="tag_line_margin_top">330dp</dimen>
+
+    <dimen name="drawer_margin_bottom">150dp</dimen>
+    <dimen name="welcome_margin_top">100dp</dimen>
+
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_medium">24sp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+
+    <dimen name="sign_in_margin_bottom">300dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
 </resources>
