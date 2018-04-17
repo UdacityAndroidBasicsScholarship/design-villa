@@ -1,48 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/demo_gradient"
-    tools:context="udacity.designvilla.LoginActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context="udacity.designvilla.LoginActivity"
+    tools:layout_editor_absoluteY="81dp">
+
 
     <TextView
-        android:id="@+id/textView2"
-        style="@style/wrap_content"
+        android:id="@+id/text_DesignVilla"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ninety_dips"
-        android:fontFamily="@font/cedarville_cursive"
+        android:layout_marginTop="7dp"
+        android:drawableTop="@drawable/designvilla_icon"
+        android:fontFamily="cursive"
         android:text="@string/app_name"
-        android:textSize="@dimen/sixty_sp"
-        android:textStyle="bold" />
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/thirty_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_margin_horizontal" />
 
-    <android.support.v7.widget.CardView
-        style="@style/wrap_content"
-        android:layout_below="@id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/twenty_dips"
-        android:layout_marginTop="@dimen/hundred_dips"
-        app:cardCornerRadius="@dimen/twenty_dips">
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/button_actions"
+        android:drawableStart="@drawable/google_icon"
+        android:paddingEnd="@dimen/padding_text"
+        android:paddingStart="@dimen/padding_icon"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_one_eight"
+        app:layout_constraintBottom_toTopOf="@+id/text_login2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            style="@style/wrap_content"
-            android:layout_below="@id/textView2"
-            android:orientation="horizontal"
-            android:padding="@dimen/ten_dips">
+    <TextView
+        android:id="@+id/tagLine"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/tag_line"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_two_zero"
+        app:layout_constraintBottom_toBottomOf="@+id/text_DesignVilla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_DesignVilla" />
 
-            <ImageView
-                android:layout_width="@dimen/fifty_dips"
-                android:layout_height="@dimen/fifty_dips"
-                android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
 
-            <TextView
-                style="@style/wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-</RelativeLayout>
+    <android.support.constraint.Guideline
+        android:id="@+id/right_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="17dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_margin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="42dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_margin_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="47dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_margin_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_margin_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <TextView
+        android:id="@+id/text_login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/account_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_one_eight"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/register_button"
+        app:layout_constraintStart_toStartOf="@+id/register_button" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_margin_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+</android.support.constraint.ConstraintLayout>
