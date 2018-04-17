@@ -1,48 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/demo_gradient"
-    tools:context="udacity.designvilla.LoginActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ninety_dips"
-        android:fontFamily="@font/cedarville_cursive"
-        android:text="@string/app_name"
-        android:textSize="@dimen/sixty_sp"
-        android:textStyle="bold" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <android.support.v7.widget.CardView
-        style="@style/wrap_content"
-        android:layout_below="@id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/twenty_dips"
-        android:layout_marginTop="@dimen/hundred_dips"
-        app:cardCornerRadius="@dimen/twenty_dips">
-
-        <LinearLayout
-            style="@style/wrap_content"
-            android:layout_below="@id/textView2"
-            android:orientation="horizontal"
-            android:padding="@dimen/ten_dips">
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="udacity.designvilla.LoginActivity">
 
             <ImageView
-                android:layout_width="@dimen/fifty_dips"
-                android:layout_height="@dimen/fifty_dips"
-                android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
+                android:id="@+id/logo"
+                android:layout_width="@dimen/ls_logo_width"
+                android:layout_height="@dimen/ls_logo_height"
+                android:layout_marginEnd="@dimen/ls_margin_end"
+                android:layout_marginStart="@dimen/ls_margin_start"
+                android:layout_marginTop="@dimen/ls_margin_top"
+                android:src="@drawable/design_transp_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                style="@style/wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-</RelativeLayout>
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ls_tv1_margin_end"
+                android:layout_marginStart="@dimen/ls_tv1_margin_start"
+                android:layout_marginTop="@dimen/ls_tv1_margin_top"
+                android:fontFamily="cursive"
+                android:padding="@dimen/ls_tv1_padding"
+                android:text="Welcome To Design Villa"
+                android:textAllCaps="false"
+                android:textSize="@dimen/thirty_sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/sign_in_width"
+                android:layout_height="@dimen/sign_in_height"
+                android:layout_marginBottom="@dimen/sign_in_margin_bottom"
+                android:layout_marginEnd="@dimen/sign_in_margin_end"
+                android:layout_marginTop="@dimen/sign_in_margin_top"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.712"
+                app:srcCompat="@drawable/google_signin" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ls_tv2_height"
+                android:layout_marginEnd="@dimen/ls_tv2_margin_end"
+                android:layout_marginStart="@dimen/ls_tv2_margin_start"
+                android:fontFamily="serif"
+                android:text="A Complete Home For Designers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+
+                 
+
