@@ -20,8 +20,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
+        System.out.println("Test");
+
         ImageView logo = findViewById(R.id.imageView);
-        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
+        Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
         logo.startAnimation(bounce);
 
         new android.os.Handler().postDelayed(new Runnable() {
