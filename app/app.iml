@@ -117,6 +117,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-26.1.0" level="project" />
@@ -145,5 +146,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: android-android-26" level="project" />
+
   </component>
 </module>

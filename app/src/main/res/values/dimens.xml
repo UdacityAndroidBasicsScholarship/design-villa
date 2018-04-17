@@ -35,4 +35,5 @@
     <dimen name="ls_tv2_height">0dp</dimen>
     <dimen name="ls_tv2_margin_end">8dp</dimen>
     <dimen name="ls_tv2_margin_start">8dp</dimen>
+
 </resources>
