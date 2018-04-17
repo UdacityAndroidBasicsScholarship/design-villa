@@ -5,4 +5,34 @@
     <dimen name="thirty_sp">30sp</dimen>
     <dimen name="two_one_five_dips">215dp</dimen>
     <dimen name="two_five_zero_dips">250dp</dimen>
+
+<!--These dimensions are related to the Splash Screen -->
+    <dimen name="ss_logo_height">358dp</dimen>
+    <dimen name="ss_margin_bottom">8dp</dimen>
+    <dimen name="ss_margin_top">8dp</dimen>
+
+    <!--These dimensions are related to the Login Screen(ImageView/Logo) -->
+    <dimen name="ls_logo_height">200dp</dimen>
+    <dimen name="ls_logo_width">246dp</dimen>
+    <dimen name="ls_margin_start">8dp</dimen>
+    <dimen name="ls_margin_end">8dp</dimen>
+    <dimen name="ls_margin_top">8dp</dimen>
+
+    <!--These dimensions are related to the Login Screen(First TextView) -->
+    <dimen name="ls_tv1_margin_start">4dp</dimen>
+    <dimen name="ls_tv1_margin_end">8dp</dimen>
+    <dimen name="ls_tv1_margin_top">8dp</dimen>
+    <dimen name="ls_tv1_padding">20dp</dimen>
+
+    <!--These dimensions are related to the Login Screen(ImageView/Google Sign In) -->
+    <dimen name="sign_in_width">160dp</dimen>
+    <dimen name="sign_in_height">140dp</dimen>
+    <dimen name="sign_in_margin_bottom">8dp</dimen>
+    <dimen name="sign_in_margin_top">8dp</dimen>
+    <dimen name="sign_in_margin_end">8dp</dimen>
+
+    <!--These dimensions are related to the Login Screen(First TextView) -->
+    <dimen name="ls_tv2_height">0dp</dimen>
+    <dimen name="ls_tv2_margin_end">8dp</dimen>
+    <dimen name="ls_tv2_margin_start">8dp</dimen>
 </resources>

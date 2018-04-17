@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
     <ImageView
-        android:src="@drawable/second_logo"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_height="@dimen/ss_logo_height"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
-</RelativeLayout>
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/ss_margin_bottom"
+        android:layout_marginTop="@dimen/ss_margin_top"
+        android:src="@drawable/design_transp_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
