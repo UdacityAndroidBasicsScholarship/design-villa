@@ -5,7 +5,6 @@
     style="@style/match_parent"
     android:background="@drawable/demo_gradient"
     tools:context="udacity.designvilla.LoginActivity">
-
     <TextView
         android:id="@+id/textView2"
         style="@style/wrap_content"
@@ -26,23 +25,23 @@
         android:layout_marginTop="@dimen/hundred_dips"
         app:cardCornerRadius="@dimen/twenty_dips">
 
-        <LinearLayout
+    <LinearLayout
+        style="@style/wrap_content"
+        android:layout_below="@id/textView2"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dips">
+
+        <ImageView
+            android:layout_width="@dimen/fifty_dips"
+            android:layout_height="@dimen/fifty_dips"
+            android:layout_marginRight="@dimen/ten_dips"
+            android:src="@drawable/gm" />
+
+        <TextView
             style="@style/wrap_content"
-            android:layout_below="@id/textView2"
-            android:orientation="horizontal"
-            android:padding="@dimen/ten_dips">
-
-            <ImageView
-                android:layout_width="@dimen/fifty_dips"
-                android:layout_height="@dimen/fifty_dips"
-                android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
-
-            <TextView
-                style="@style/wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
-        </LinearLayout>
+            android:layout_gravity="center"
+            android:text="@string/signin_with_gmail"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>
