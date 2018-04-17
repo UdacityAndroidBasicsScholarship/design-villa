@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/splash_layout"
     style="@style/match_parent"
+    android:background="@color/background"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
@@ -29,12 +30,14 @@
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textAllCaps="true"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/description" />
+            android:text="@string/description"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </RelativeLayout>

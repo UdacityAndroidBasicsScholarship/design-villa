@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_layout"
     style="@style/match_parent"
+    android:background="@color/background"
     tools:context="udacity.designvilla.LoginActivity">
 
     <LinearLayout
@@ -16,13 +17,13 @@
             android:id="@+id/textView2"
             style="@style/wrap_content"
             android:text="@string/app_name"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display3"
-            android:textStyle="bold" />
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+            android:textColor="@color/white" />
 
         <ImageView
             android:layout_width="@dimen/logo_width"
             android:layout_height="@dimen/logo_height"
-            android:padding="@dimen/padding_sixteen"
+            android:padding="@dimen/padding_twentyfour"
             android:src="@drawable/logo" />
 
         <ImageButton
