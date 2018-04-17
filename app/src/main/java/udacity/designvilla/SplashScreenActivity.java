@@ -1,5 +1,6 @@
 package udacity.designvilla;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -20,7 +21,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
+
         ImageView logo = findViewById(R.id.imageView);
+        ImageView backgroundImg = (ImageView) findViewById(R.id.imageView);
+        backgroundImg.setBackgroundColor(Color.parseColor("#B3E5FC"));
         Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
         logo.startAnimation(bounce);
 
