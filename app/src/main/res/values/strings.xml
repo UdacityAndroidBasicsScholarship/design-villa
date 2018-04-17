@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Design Villa</string>
+    <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
-    <string name="signin_with_gmail">Signin with Gmail</string>
+    <string name="showcast_n_android_design_skills">ShowCast Your \n <i><b>Android Design Skills</b></i></string>
+    <string name="SignUp_line"><i>Don\'t Have Account <b><u>Sign UP NOW!</u></b></i></string>
 </resources>
