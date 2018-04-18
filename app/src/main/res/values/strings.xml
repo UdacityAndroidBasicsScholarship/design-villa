@@ -2,4 +2,7 @@
     <string name="app_name">Design Villa</string>
     <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="finish">finish</string>
 </resources>
