@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.android.splashscreenjava.R;
 
@@ -14,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText name;
     private EditText password;
-    // private TextView info;
+     private TextView info;
     private Button login;
     private int noOfAttempts = 3;
     @Override
@@ -27,10 +28,10 @@ public class LoginActivity extends AppCompatActivity {
 
         name = (EditText)findViewById(R.id.loginName);
         password = (EditText)findViewById(R.id.password);
-        //   info = (TextView)findViewById(R.id.info);
+           info = (TextView)findViewById(R.id.info);
         login = (Button)findViewById(R.id.Loginbutton);
 
-        //     info.setText("No. of attempts remaining : 3");
+           info.setText("No. of attempts remaining : 3");
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         else{
             noOfAttempts--;
 
-            //       info.setText("No. of attempts remaining : " + String.valueOf(noOfAttempts));
+                   info.setText("No. of attempts remaining : " + String.valueOf(noOfAttempts));
 
             if(noOfAttempts == 0){
                 login.setEnabled(false);

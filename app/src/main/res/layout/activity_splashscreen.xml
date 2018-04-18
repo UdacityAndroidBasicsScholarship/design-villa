@@ -16,7 +16,7 @@
         android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:src="@drawable/third_logo"
-        android:layout_margin="15dp"
+        android:layout_margin="45dp"
         />
 
     <TextView

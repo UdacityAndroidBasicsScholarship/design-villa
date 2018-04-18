@@ -10,4 +10,5 @@
     <string name="about">Proudly Presented By :</string>
     <string name="us">Codevengers</string>
     <string name="password">password</string>
+    <string name="info">No. of attempts remaining :</string>
 </resources>
