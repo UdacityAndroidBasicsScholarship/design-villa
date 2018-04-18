@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Design Villa</string>
-    <string name="login_activity">Login Activity</string>
-    <string name="signin_with_gmail">Signin with Gmail</string>
+
+    <string name="logo">Logo</string>
+    <string name="swipe_down_to_login">Swipe down to Login</string>
+    <string name="made_by" />
+
+
+    <string name="welcome">Welcome</string>
+    <string name="to">to</string>
+    <string name="tag_line">House of Design</string>
+    <string name="sign_in_to_continue">Please Sign In to continue</string>
+    <string name="register">Or Register</string>
+
 </resources>

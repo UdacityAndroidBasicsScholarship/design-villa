@@ -1,48 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/demo_gradient"
-    tools:context="udacity.designvilla.LoginActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
 
     <TextView
-        android:id="@+id/textView2"
-        style="@style/wrap_content"
-        android:layout_alignParentTop="true"
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ninety_dips"
-        android:fontFamily="@font/cedarville_cursive"
-        android:text="@string/app_name"
-        android:textSize="@dimen/sixty_sp"
+        android:layout_marginTop="@dimen/welcome_margin_top"
+        android:fontFamily="serif"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"
         android:textStyle="bold" />
 
-    <android.support.v7.widget.CardView
-        style="@style/wrap_content"
-        android:layout_below="@id/textView2"
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/twenty_dips"
-        android:layout_marginTop="@dimen/hundred_dips"
-        app:cardCornerRadius="@dimen/twenty_dips">
+        android:alpha="0.7"
+        android:text="@string/to"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small" />
 
-        <LinearLayout
-            style="@style/wrap_content"
-            android:layout_below="@id/textView2"
-            android:orientation="horizontal"
-            android:padding="@dimen/ten_dips">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.9"
+        android:text="@string/tag_line"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium" />
 
-            <ImageView
-                android:layout_width="@dimen/fifty_dips"
-                android:layout_height="@dimen/fifty_dips"
-                android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"
+        android:alpha="0.7"
+        android:fontFamily="sans-serif"
+        android:text="@string/sign_in_to_continue"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small" />
 
-            <TextView
-                style="@style/wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:alpha="0.8"
+        android:text="@string/register"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_small" />
+
+
 </RelativeLayout>

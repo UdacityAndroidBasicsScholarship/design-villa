@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="udacity.designvilla.LauncherActivity">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/arc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/drawer_margin_bottom"
+        android:background="@android:color/black"
+        android:elevation="10dp"
+        android:hapticFeedbackEnabled="true"
+        app:arc_cropDirection="outside"
+        app:arc_height="40dp"
+        app:arc_position="bottom">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/myvilla" />
+
+        <TextView
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="@dimen/margin"
+            android:alpha="0.5"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_small"
+            tools:text="@string/swipe_down_to_login" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <TextView
+        android:id="@+id/made_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small"
+        tools:text="@string/made_by" />
+
+</FrameLayout>
