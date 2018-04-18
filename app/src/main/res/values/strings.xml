@@ -2,4 +2,12 @@
     <string name="app_name">Design Villa</string>
     <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
+    <string name="tagline">Celebrating Developing Apps ..!</string>
+    <string name="login">Login</string>
+    <string name="button">Let\'s Go</string>
+    <string name="sign_in_id">email-id / slack-id </string>
+    <string name="remaining_attempts">No. of attempts remaining :</string>
+    <string name="about">Proudly Presented By :</string>
+    <string name="us">Codevengers</string>
+    <string name="password">password</string>
 </resources>

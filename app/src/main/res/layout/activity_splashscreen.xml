@@ -2,16 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/bg_one"
-    tools:context="udacity.designvilla.SplashScreenActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="udacity.designvilla.SplashScreenActivity"
+    android:theme="@style/NoActionBar"
+    android:background="@drawable/blue">
 
 
     <ImageView
-        android:src="@drawable/second_logo"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:src="@drawable/third_logo"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="cursive"
+        android:includeFontPadding="true"
+        android:text="@string/tagline"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+
+
 </RelativeLayout>
