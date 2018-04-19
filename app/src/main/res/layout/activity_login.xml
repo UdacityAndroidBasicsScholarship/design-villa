@@ -2,33 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/demo_gradient"
-    tools:context="udacity.designvilla.LoginActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ninety_dips"
-        android:fontFamily="@font/cedarville_cursive"
-        android:text="@string/app_name"
-        android:textSize="@dimen/sixty_sp"
-        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back4" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/code_venger" />
 
     <android.support.v7.widget.CardView
-        style="@style/wrap_content"
-        android:layout_below="@id/textView2"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@id/image_view"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/twenty_dips"
-        android:layout_marginTop="@dimen/hundred_dips"
-        app:cardCornerRadius="@dimen/twenty_dips">
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="8dp">
 
         <LinearLayout
             style="@style/wrap_content"
-            android:layout_below="@id/textView2"
+            android:layout_below="@id/image_view"
             android:orientation="horizontal"
             android:padding="@dimen/ten_dips">
 
@@ -36,13 +39,37 @@
                 android:layout_width="@dimen/fifty_dips"
                 android:layout_height="@dimen/fifty_dips"
                 android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
+                android:src="@drawable/google_icon" />
 
             <TextView
                 style="@style/wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
+                android:paddingLeft="39dp"
+                android:text="@string/sign_in"
+                android:textSize="18sp" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="20dp"
+        android:text="@string/register"
+        android:textColor="#FF3D00"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:background="#FF3D00" />
+
 </RelativeLayout>
