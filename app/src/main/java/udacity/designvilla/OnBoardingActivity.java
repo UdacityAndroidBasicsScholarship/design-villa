@@ -47,6 +47,7 @@ public class OnBoardingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mViewPager.setCurrentItem(mCurrentPage - 1);
+                mCounter -= 1;
             }
         });
 
