@@ -1,48 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@drawable/demo_gradient"
-    tools:context="udacity.designvilla.LoginActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ninety_dips"
-        android:fontFamily="@font/cedarville_cursive"
-        android:text="@string/app_name"
-        android:textSize="@dimen/sixty_sp"
-        android:textStyle="bold" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:context="udacity.designvilla.LoginActivity">
 
-    <android.support.v7.widget.CardView
-        style="@style/wrap_content"
-        android:layout_below="@id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/twenty_dips"
-        android:layout_marginTop="@dimen/hundred_dips"
-        app:cardCornerRadius="@dimen/twenty_dips">
+        <ImageView
+            android:id="@+id/imageicon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_zero_zero_dips"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/forty_sp"
+            android:src="@drawable/first_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            style="@style/wrap_content"
-            android:layout_below="@id/textView2"
-            android:orientation="horizontal"
-            android:padding="@dimen/ten_dips">
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview1"
+            android:layout_width="@dimen/three_twenty_dips"
+            android:layout_height="@dimen/sixty_dips"
+            android:layout_marginLeft="@dimen/thirty_dips"
+            android:layout_marginRight="@dimen/thirty_dips"
+            android:layout_marginTop="@dimen/twenty_dips"
+            card_view:cardCornerRadius="@dimen/six_dips"
+            card_view:contentPadding="@dimen/five_dips"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/imageicon">
 
-            <ImageView
-                android:layout_width="@dimen/fifty_dips"
-                android:layout_height="@dimen/fifty_dips"
-                android:layout_marginRight="@dimen/ten_dips"
-                android:src="@drawable/gmail_icon" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                style="@style/wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/signin_with_gmail"
-                android:textSize="@dimen/eighteen_sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-</RelativeLayout>
+                <ImageView
+                    android:id="@+id/username_icon"
+                    android:layout_width="@dimen/twenty_five_dips"
+                    android:layout_height="@dimen/twenty_seven_dips"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/four_dips"
+                    android:layout_marginStart="@dimen/two_dips"
+                    android:src="@drawable/username" />
+
+                <EditText
+                    android:id="@+id/username_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:inputType="textNoSuggestions" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview2"
+            android:layout_width="@dimen/three_twenty_dips"
+            android:layout_height="@dimen/sixty_dips"
+            android:layout_marginLeft="@dimen/thirty_dips"
+            android:layout_marginRight="@dimen/thirty_dips"
+            android:layout_marginTop="@dimen/fourteen_dips"
+            card_view:cardCornerRadius="@dimen/six_dips"
+            card_view:contentPadding="@dimen/five_dips"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/cardview1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/password_icon"
+                    android:layout_width="@dimen/twenty_two_dips"
+                    android:layout_height="@dimen/twenty_two_dips"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/four_dips"
+                    android:layout_marginStart="@dimen/two_dips"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dips"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="@dimen/two_hundred_dips"
+            android:layout_height="@dimen/forty_five_dips"
+            android:layout_marginTop="@dimen/forty_dips"
+            android:background="@drawable/round_button"
+            android:text="@string/sign_in"
+            app:layout_constraintBottom_toTopOf="@id/google_sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview2" />
+
+        <Button
+            android:id="@+id/google_sign_in"
+            android:layout_width="@dimen/two_hundred_dips"
+            android:layout_height="@dimen/fifty_dips"
+            android:layout_marginTop="@dimen/ten_dips"
+            android:background="@drawable/google_signin"
+            app:layout_constraintBottom_toTopOf="@id/account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signin" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/_account"
+            android:textColor="@color/quote_2"
+            android:textSize="@dimen/fourteen_sp"
+            app:layout_constraintBottom_toTopOf="@id/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/google_sign_in" />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="@dimen/two_hundred_dips"
+            android:layout_height="@dimen/forty_five_dips"
+            android:layout_marginBottom="@dimen/twenty_nine_dips"
+            android:background="@drawable/round_button"
+            android:text="@string/sign_up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/account" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
