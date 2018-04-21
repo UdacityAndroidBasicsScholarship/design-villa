@@ -17,6 +17,14 @@ import com.example.android.splashscreenjava.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
 
+    /**
+     * @param mSlideImages :  integer array to store images for each view on the viewpager
+     * @param mSlideDesc : string array to store the description of each view on the viewpager
+     * @param mSlideHeader : string array to store the header of each view
+     */
+    public int[] mSlideImages = {R.drawable.villa3, R.drawable.showcase, R.drawable.justjava, R.drawable.quiz, R.drawable.villa1};
+    public String[] mSlideHeader = {"welcome to design villa !", "Showcase your work here..!!  ", "Just java apps", "Quiz app", "get started.. !!"};
+    public String[] mSlideDesc = {" ", "Place your dream projects here....!!", "Enjoy sip of favourite coffee, with your loved one's along with just java app....!", "Let's explore how sharp is your mind, play and have results @ your gmail...!!","Pin your apps here.\nTo know more about this app and it's developer, click next. "};
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
@@ -25,17 +33,9 @@ public class ViewPagerAdapter extends PagerAdapter {
         mContext = context;
     }
 
-    /**
-     * @param mSlideIamges :  integer array to store images for each view on the viewpager
-     * @param mSlideDescip : string array to store the description of each view on the viewpager
-     */
-    public int[] mSlideImages = {R.drawable.first_logo, R.drawable.second_logo, R.drawable.third_logo};
-    public String[] mSlideDescrip = {"This is the first slide", "This is the second slide", "This is the third slide"};
-
-
     @Override
     public int getCount() {
-        return mSlideDescrip.length;
+        return mSlideHeader.length;
     }
 
     @Override
@@ -51,9 +51,11 @@ public class ViewPagerAdapter extends PagerAdapter {
 
         ImageView imageView = view.findViewById(R.id.slide_image_view);
         TextView textView = view.findViewById(R.id.slide_text_view);
+        TextView textView1 = view.findViewById(R.id.slide_text_view_desc);
 
         imageView.setImageResource(mSlideImages[position]);
-        textView.setText(mSlideDescrip[position]);
+        textView.setText(mSlideHeader[position]);
+        textView1.setText(mSlideDesc[position]);
 
         container.addView(view);
 

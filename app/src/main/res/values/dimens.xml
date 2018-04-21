@@ -8,4 +8,10 @@
     <dimen name="two_hundred_dips">200dp</dimen>
     <dimen name="twenty_sp">20sp</dimen>
     <dimen name="eighty_dips">80dp</dimen>
+    <dimen name="hundred_dips">100dp</dimen>
+    <dimen name="twenty_four_sp">24sp</dimen>
+    <dimen name="seventy_five_dips">75dp</dimen>
+    <dimen name="twenty_five_dips">25dp</dimen>
+    <dimen name="sixty_dips">60dp</dimen>
+    <dimen name="sixteen_dips">16dp</dimen>
 </resources>
