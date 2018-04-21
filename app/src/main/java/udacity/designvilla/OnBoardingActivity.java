@@ -58,7 +58,7 @@ public class OnBoardingActivity extends AppCompatActivity {
                 mCounter += 1;
 
 
-                if (mCounter == 3) {
+                if (mCounter == 5) {
                     Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
                     mCounter = 0;
@@ -68,7 +68,7 @@ public class OnBoardingActivity extends AppCompatActivity {
     }
 
     public void addIndicator(int position) {
-        mDotsTextView = new TextView[3];
+        mDotsTextView = new TextView[5];
         mLinearLayout.removeAllViews();
 
         for (int i = 0; i < mDotsTextView.length; i++) {
@@ -80,7 +80,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         }
 
         if (mDotsTextView.length > 0) {
-            mDotsTextView[position].setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+            mDotsTextView[position].setTextColor(getResources().getColor(R.color.transparentwhite));
         }
     }
 
