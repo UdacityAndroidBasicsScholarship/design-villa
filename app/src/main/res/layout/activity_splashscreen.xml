@@ -3,15 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
+    android:background="@drawable/d8"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/two_five_zero_dips"
+        android:layout_width="@dimen/one_five_zero_dips"
+        android:layout_height="@dimen/one_five_zero_dips"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/second_logo" />
+        android:src="@drawable/lg4" />
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ninety_dips"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/app_name"
+        android:textSize="@dimen/sixty_sp"
+        android:textColor="@color/white" />
 </RelativeLayout>

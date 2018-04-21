@@ -9,6 +9,9 @@
     <dimen name="sixty_sp">60sp</dimen>
     <dimen name="twenty_dips">20dp</dimen>
     <dimen name="hundred_dips">100dp</dimen>
+    <dimen name="two_hundred_dips">200dp</dimen>
+    <dimen name="two_seven_zero_dips">270dp</dimen>
+    <dimen name="one_five_zero_dips">150dp</dimen>
     <dimen name="ten_dips">10dp</dimen>
     <dimen name="fifty_dips">50dp</dimen>
     <dimen name="eighteen_sp">18sp</dimen>
