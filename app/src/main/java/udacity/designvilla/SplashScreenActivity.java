@@ -1,6 +1,7 @@
 package udacity.designvilla;
 
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.animation.Animation;
@@ -14,10 +15,13 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     public final static int TIME_OUT = 3000;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_splashscreen);
 
         ImageView logo = findViewById(R.id.imageView);
@@ -33,5 +37,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.sliding_in, R.anim.sliding_out);
             }
         }, TIME_OUT);
+
+
+
     }
 }

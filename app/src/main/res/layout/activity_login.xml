@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
     android:fillViewport="true"
-    android:theme="@style/NoActionBar"
     tools:context="udacity.designvilla.LoginActivity">
 
     <RelativeLayout
