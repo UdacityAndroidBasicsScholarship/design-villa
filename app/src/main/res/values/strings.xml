@@ -1,5 +1,23 @@
 <resources>
-    <string name="app_name">Design Villa</string>
-    <string name="design_villa">Design Villa</string>
-    <string name="login_activity">Login Activity</string>
+    <string name="app_name">Intro Slider</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide1_title">Quiz App</string>
+    <string name="slide1_descript">You get a handy of multiple choice question from different area</string>
+
+    <string name="slide2_title">Just Java App</string>
+    <string name="slide2_descript">Order coffee/beverage for your family or friend</string>
+
+    <string name="slide_3_title">Court Counter App</string>
+    <string name="slide_3_desc">Track score of each team in basketball </string>
+
+    <string name="slide4_title">Clone App</string>
+    <string name="slide4_descript">"You get code of layout of popular app that's being cloned "</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="welcome">Welcome to Onboarding activity</string>
 </resources>

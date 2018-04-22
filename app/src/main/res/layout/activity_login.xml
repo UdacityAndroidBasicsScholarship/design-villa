@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:layout_marginTop="215dp"
+        android:text="log in"
+        android:textSize="30sp" />
 </RelativeLayout>
