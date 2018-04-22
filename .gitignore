@@ -1,4 +1,5 @@
-# Created by https://www.gitignore.io/api/macos,linux,android,windows,intellij
+
+# Created by https://www.gitignore.io/api/macos,linux,android,windows,intellij+all
 
 ### Android ###
 # Built application files
@@ -54,7 +55,7 @@ freeline_project_description.json
 ### Android Patch ###
 gen-external-apklibs
 
-### Intellij ###
+### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -107,16 +108,17 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-### Intellij Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+### Intellij+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
+.idea/
 
-# Sonarlint plugin
-.idea/sonarlint
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+modules.xml
+.idea/misc.xml
+*.ipr
 
 ### Linux ###
 *~
@@ -182,4 +184,4 @@ $RECYCLE.BIN/
 *.lnk
 
 
-# End of https://www.gitignore.io/api/macos,linux,android,windows,intellij
+# End of https://www.gitignore.io/api/macos,linux,android,windows,intellij+all
