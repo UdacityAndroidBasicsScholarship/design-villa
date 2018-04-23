@@ -2,9 +2,9 @@
 
 :+1: :tada: First of all, thanks for taking the time to contribute :tada: :+1:
 
-The following is a set of guidelines for contributing to Design Villa project.
-
 For any discussions, queries or clarifications, reach out to any of the project moderators or post a message on the slack channel #cp_desgn_app. Your suggestions :mag_right: and feedback :memo: are always welcome.
+
+The following is a set of guidelines for contributing to Design Villa project.
 
 * Add comments to your code as per the standards.
 * Avoid using hardcoded values.
