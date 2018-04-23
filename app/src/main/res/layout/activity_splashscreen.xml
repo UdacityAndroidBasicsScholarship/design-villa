@@ -5,11 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     style="@style/match_parent"
-    android:background="#ffff"
+    android:background="@color/white"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
     <ImageView
+        android:transitionName="@string/transition_element"
         android:id="@+id/logo_image"
         android:layout_width="@dimen/one_seventy_dips"
         android:layout_height="@dimen/one_seventy_dips"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
@@ -11,13 +10,14 @@
 
 
     <ImageView
-        android:contentDescription="@string/app_logo"
         android:id="@+id/app_name"
         android:layout_width="@dimen/one_fifty_dips"
         android:layout_height="@dimen/one_fifty_dips"
         android:layout_marginBottom="@dimen/thirty_dips"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
+        android:contentDescription="@string/app_logo"
+        android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toTopOf="@+id/welcome_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
