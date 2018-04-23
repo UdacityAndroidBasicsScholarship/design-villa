@@ -8,4 +8,12 @@
     <string name="dev_credits">Made with \u2764 by Codevengers</string>
     <string name="app_logo">app logo</string>
     <string name="transition_element">LogoTransition</string>
+    <string name="exit">EXIT</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="this_is_the_third_activity">This is the third activity</string>
+    <string name="sign_out">Sign out</string>
+    <string name="exit_">Exit</string>
+    <string name="title">Title</string>
 </resources>

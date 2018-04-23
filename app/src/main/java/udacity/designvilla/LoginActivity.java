@@ -1,11 +1,14 @@
 package udacity.designvilla;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.android.splashscreenjava.R;
 import com.google.android.gms.common.SignInButton;
 
+import udacity.designvilla.Util.HomeActivity;
 import udacity.designvilla.Util.Tools;
 
 
@@ -27,5 +30,12 @@ public class LoginActivity extends AppCompatActivity {
         googleSignInBtn.setColorScheme(SignInButton.COLOR_DARK);
 
         //TODO: Implement Google Sign-In logic
+        googleSignInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

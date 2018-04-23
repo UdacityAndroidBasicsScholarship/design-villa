@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#6D4C41</color>
     <color name="colorAccent">#FF4081</color>
     <color name="black_overlay">#66000000</color>
-    <color name="white">#ffff</color>
+    <color name="white">#FFFFFF</color>
 </resources>
