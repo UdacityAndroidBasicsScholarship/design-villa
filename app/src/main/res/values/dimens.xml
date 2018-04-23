@@ -12,4 +12,12 @@
     <dimen name="ten_dips">10dp</dimen>
     <dimen name="fifty_dips">50dp</dimen>
     <dimen name="eighteen_sp">18sp</dimen>
+    <dimen name="one_seventy_dips">170dp</dimen>
+    <dimen name="sixty_four_dips">64dp</dimen>
+    <dimen name="forty_four_dips">44dp</dimen>
+    <dimen name="sixteen_dips">16dp</dimen>
+    <dimen name="one_fifty_dips">150dp</dimen>
+    <dimen name="thirty_dips">30dp</dimen>
+    <dimen name="eight_dips">8dp</dimen>
+    <dimen name="twenty_eight_dips">28dp</dimen>
 </resources>
