@@ -56,4 +56,4 @@ This application is a collaborative project made by the Google Udacity Android B
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for contributing guidelines.
+Please read [CONTRIBUTING.md](https://github.com/UdacityAndroidBasicsScholarship/design-villa/blob/master/CONTRIBUTING.md) for contributing guidelines.
