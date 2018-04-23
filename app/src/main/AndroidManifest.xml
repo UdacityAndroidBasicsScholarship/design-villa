@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="udacity.designvilla.SliderActivity">
+        <activity android:name="udacity.designvilla.OnBoardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
