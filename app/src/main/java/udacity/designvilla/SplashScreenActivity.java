@@ -38,7 +38,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                         (SplashScreenActivity.this, findViewById(R.id.logo_image), getResources().getString(R.string.transition_element));
 
                 startActivity(intent, activityOptionsCompat.toBundle());
-                finish();
             }
         }, TIME_OUT);
     }
