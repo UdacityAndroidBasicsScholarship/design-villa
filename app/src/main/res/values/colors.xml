@@ -2,6 +2,9 @@
 <resources>
     <color name="colorPrimary">#795548</color>
     <color name="colorPrimaryDark">#6D4C41</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="black_overlay">#66000000</color>
+    <color name="colorAccent">#2E7D32</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="quoteColor">#795548</color>
+    <color name="quote_2">#1B5E20</color>
 </resources>

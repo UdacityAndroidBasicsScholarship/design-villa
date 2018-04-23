@@ -12,4 +12,22 @@
     <dimen name="ten_dips">10dp</dimen>
     <dimen name="fifty_dips">50dp</dimen>
     <dimen name="eighteen_sp">18sp</dimen>
+    <dimen name="three_zero_zero_dips">300dp</dimen>
+    <dimen name="three_twenty_dips">320dp</dimen>
+    <dimen name="sixty_dips">60dp</dimen>
+    <dimen name="thirty_dips">30dp</dimen>
+    <dimen name="six_dips">6dp</dimen>
+    <dimen name="five_dips">5dp</dimen>
+    <dimen name="twenty_five_dips">25dp</dimen>
+    <dimen name="twenty_seven_dips">27dp</dimen>
+    <dimen name="two_dips">2dp</dimen>
+    <dimen name="four_dips">4dp</dimen>
+    <dimen name="fourteen_dips">14dp</dimen>
+    <dimen name="two_hundred_dips">200dp</dimen>
+    <dimen name="forty_five_dips">45dp</dimen>
+    <dimen name="forty_dips">40dp</dimen>
+    <dimen name="fourteen_sp">14sp</dimen>
+    <dimen name="twenty_nine_dips">29dp</dimen>
+    <dimen name="three_fifty_dips">350dp</dimen>
+    <dimen name="twenty_two_dips">22dp</dimen>
 </resources>
