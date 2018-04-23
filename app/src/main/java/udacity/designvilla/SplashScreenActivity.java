@@ -2,6 +2,7 @@ package udacity.designvilla;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
@@ -28,7 +29,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);
         logo.startAnimation(bounce);
 
-        new android.os.Handler().postDelayed(new Runnable() {
+
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 //TODO: place a check to see if user is logged in or not and direct him/her to the respective screen
@@ -41,4 +43,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         }, TIME_OUT);
     }
+
 }
