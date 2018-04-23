@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Design Villa</string>
-    <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="welcome_msg">Welcome to Design Villa</string>
+    <string name="tag_line">Discover best android design practices</string>
+    <string name="terms_and_policy">Terms of service and privacy policy</string>
+    <string name="dev_credits">Made with \u2764 by Codevengers</string>
 </resources>
