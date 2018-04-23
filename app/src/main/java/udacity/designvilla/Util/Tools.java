@@ -7,10 +7,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-/**
- * Created by Rafaqat Rasool on 15-04-2018.
- */
-
 public class Tools {
 
     /**

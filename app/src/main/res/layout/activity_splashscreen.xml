@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
@@ -9,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo_image"
         android:layout_width="@dimen/one_seventy_dips"
         android:layout_height="@dimen/one_seventy_dips"
         android:contentDescription="@string/app_name"
@@ -21,7 +22,7 @@
         app:layout_constraintVertical_bias="0.404" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/app_name"
         style="@style/wrap_content"
         android:layout_marginBottom="@dimen/sixty_four_dips"
         android:text="@string/app_name"
@@ -33,7 +34,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/app_version"
         style="@style/wrap_content"
         android:layout_marginBottom="@dimen/forty_four_dips"
         android:layout_marginEnd="@dimen/sixteen_dips"
@@ -47,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/developers"
         style="@style/wrap_content"
         android:layout_marginBottom="@dimen/sixteen_dips"
         android:layout_marginEnd="@dimen/sixteen_dips"

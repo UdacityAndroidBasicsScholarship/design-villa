@@ -12,6 +12,7 @@ import udacity.designvilla.Util.Tools;
 public class LoginActivity extends AppCompatActivity {
 
     private SignInButton googleSignInBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
