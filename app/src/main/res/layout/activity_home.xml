@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_parent"
     android:id="@+id/home_navigation_layout"
-    tools:context="udacity.designvilla.Util.HomeActivity">
+    tools:context="udacity.designvilla.HomeActivity">
 
     <!-- The contents should be within the linear layout. You can change it to any layout -->
     <LinearLayout

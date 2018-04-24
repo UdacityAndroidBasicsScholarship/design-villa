@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import com.example.android.splashscreenjava.R;
 
-import udacity.designvilla.Util.Tools;
+import udacity.designvilla.Util.SystemBarColorScheme;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -22,8 +22,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
         //customize the status bar color and light
-        Tools.setSystemBarColor(this, android.R.color.white);
-        Tools.setSystemBarLight(this);
+        SystemBarColorScheme.setSystemBarColor(this, android.R.color.white);
+        SystemBarColorScheme.setSystemBarLight(this);
 
         ImageView logo = findViewById(R.id.logo_image);
         Animation bounce = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce_animation);

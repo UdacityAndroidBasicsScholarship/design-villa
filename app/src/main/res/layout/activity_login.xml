@@ -11,7 +11,7 @@
 
     <ImageView
         android:id="@+id/app_name"
-        android:layout_width="@dimen/one_fifty_dips"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/one_fifty_dips"
         android:layout_marginBottom="@dimen/thirty_dips"
         android:layout_marginEnd="@dimen/sixteen_dips"
@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/welcome_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:srcCompat="@drawable/design_villa" />
 
     <TextView
         android:id="@+id/welcome_text"

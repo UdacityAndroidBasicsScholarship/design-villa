@@ -12,15 +12,14 @@
     <ImageView
         android:transitionName="@string/transition_element"
         android:id="@+id/logo_image"
-        android:layout_width="@dimen/one_seventy_dips"
-        android:layout_height="@dimen/one_seventy_dips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
-        android:src="@mipmap/ic_launcher_foreground"
+        android:src="@drawable/design_villa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/app_name"

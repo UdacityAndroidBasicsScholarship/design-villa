@@ -8,8 +8,7 @@ import android.view.View;
 import com.example.android.splashscreenjava.R;
 import com.google.android.gms.common.SignInButton;
 
-import udacity.designvilla.Util.HomeActivity;
-import udacity.designvilla.Util.Tools;
+import udacity.designvilla.Util.SystemBarColorScheme;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -21,8 +20,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //customize the status bar color and light
-        Tools.setSystemBarColor(this, android.R.color.white);
-        Tools.setSystemBarLight(this);
+        SystemBarColorScheme.setSystemBarColor(this, android.R.color.white);
+        SystemBarColorScheme.setSystemBarLight(this);
 
         googleSignInBtn = findViewById(R.id.sign_in_button);
         //customize the button

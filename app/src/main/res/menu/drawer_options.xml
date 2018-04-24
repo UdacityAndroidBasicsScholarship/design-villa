@@ -3,11 +3,13 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:title="Option 1" />
-        <item android:title="Option 2" />
-        <item android:title="Option 3" />
-        <item android:title="Option 4" />
-        <item android:title="Option 5" />
+        <item android:id="@+id/home" android:title="@string/home" />
+        <item android:id="@+id/favourites" android:title="@string/favourites" />
+        <item android:id="@+id/help" android:title="@string/help" />
+        <item android:id="@+id/contact" android:title="@string/contact_us" />
+        <item android:id="@+id/github" android:title="@string/github_link" />
+        <item android:id="@+id/about" android:title="@string/about" />
+        <item android:id="@+id/rate" android:title="@string/rate_us" />
         
     </group>
 
