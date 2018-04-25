@@ -13,5 +13,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/two_one_five_dips"
         android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:textSize="@dimen/textSize_30sp" />
 </RelativeLayout>

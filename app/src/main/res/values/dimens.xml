@@ -2,6 +2,6 @@
 <resources>
     <dimen name="one_nine_six_dips">196dp</dimen>
     <dimen name="forty_sp">40dp</dimen>
-    <dimen name="thirty_sp">30sp</dimen>
+    <dimen name="textSize_30sp">30sp</dimen>
     <dimen name="two_one_five_dips">215dp</dimen>
 </resources>
