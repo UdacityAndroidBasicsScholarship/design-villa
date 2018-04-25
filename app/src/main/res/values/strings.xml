@@ -2,4 +2,13 @@
     <string name="app_name">Design Villa</string>
     <string name="design_villa">Design Villa</string>
     <string name="login_activity">Login Activity</string>
+    <string name="get_started">Enter to Login</string>
+    <string name="tag_line">The  Home  Of  Designers</string>
+    <string name="dev_name">© Codevengers</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="signed_in_user">Signed in as: %s</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="loading">Loading</string>
+    <string name="AppLogo">AppLogo</string>
 </resources>

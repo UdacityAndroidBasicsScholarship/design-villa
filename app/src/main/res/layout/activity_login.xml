@@ -3,15 +3,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/login_bg"
+    android:background="@drawable/img_bg"
     tools:context="udacity.designvilla.LoginActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="248dp"
+        android:layout_height="191dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/two_one_five_dips"
-        android:text="@string/login_activity"
-        android:textSize="@dimen/thirty_sp" />
+        android:layout_marginTop="43dp"
+        android:contentDescription="@string/AppLogo"
+        android:src="@drawable/third_logo" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:visibility="visible"
+        tools:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:padding="5dp"
+        android:text="@string/signed_out"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dev_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/dev_textView"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:shadowColor="#FF8206"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="15"
+        android:textColor="#FF8206"
+        android:textStyle="bold"
+        tools:fontFamily="@font/roboto_slab"
+        android:text="@string/dev_name" />
+
 </RelativeLayout>
