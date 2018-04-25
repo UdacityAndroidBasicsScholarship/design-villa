@@ -2,8 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     style="@style/match_parent"
-    android:background="@drawable/bg_one"
+    android:background="@drawable/gradient_animation_list"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
@@ -13,5 +14,5 @@
         android:layout_height="@dimen/two_five_zero_dips"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/second_logo" />
+        android:src="@drawable/design_villa" />
 </RelativeLayout>
