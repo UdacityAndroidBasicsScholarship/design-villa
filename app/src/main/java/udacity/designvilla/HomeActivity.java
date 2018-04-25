@@ -15,11 +15,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.android.splashscreenjava.R;
+import com.rom4ek.arcnavigationview.ArcNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
-    private NavigationView mNavigationView;
+    private ArcNavigationView mNavigationView;
     private Toolbar mToolbar;
 
     @Override
