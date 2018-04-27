@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "349848970267",
+    "firebase_url": "https://iron-country-201503.firebaseio.com",
+    "project_id": "iron-country-201503",
+    "storage_bucket": "iron-country-201503.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349848970267:android:b05ec24326df2a9f",
+        "android_client_info": {
+          "package_name": "udacity.designvilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349848970267-rrembj1va2o9objkbdk8fv7cm86pq0be.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "udacity.designvilla",
+            "certificate_hash": "e3311825d7ec01b87c5165658b2b49ff591b7923"
+          }
+        },
+        {
+          "client_id": "349848970267-27t6d14beofdf2sgkqijf577q4ruclfk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "349848970267-4lg7bf5digplkq3ikovr2o83rpakli0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "udacity.designvilla",
+            "certificate_hash": "1746d08d375ae460cb1b786ea9977289e4062c4b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAchh2IuqvfVhNU3j08Wbt_zXFTMoK5Crc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349848970267-27t6d14beofdf2sgkqijf577q4ruclfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

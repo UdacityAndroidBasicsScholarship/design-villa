@@ -1,64 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+    android:id="@+id/parent"
     style="@style/match_parent"
-    android:background="@color/white"
+    android:background="@drawable/color_animate"
+    android:scaleType="centerCrop"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
+    <RelativeLayout
+        android:id="@+id/image_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/bg1">
 
-    <ImageView
-        android:transitionName="@string/transition_element"
-        android:id="@+id/logo_image"
-        android:layout_width="@dimen/one_seventy_dips"
-        android:layout_height="@dimen/one_seventy_dips"
-        android:contentDescription="@string/app_name"
-        android:src="@mipmap/ic_launcher_foreground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        <ImageView
+            android:id="@+id/img_villa"
+            android:layout_width="248dp"
+            android:layout_height="191dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:contentDescription="@string/AppLogo"
+            android:src="@drawable/third_logo" />
 
-    <TextView
-        android:id="@+id/app_name"
-        style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/sixty_four_dips"
-        android:text="@string/app_name"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="@android:color/darker_gray"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        <TextView
+            android:id="@+id/tag_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="256dp"
+            android:fontFamily="@font/vulturemotor"
+            android:padding="5dp"
+            android:shadowColor="#673AB7"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="15"
+            android:text="@string/tag_line"
+            android:textColor="#FFA726"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/app_version"
-        style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/forty_four_dips"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
-        android:text="@string/app_version"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/enter_btn"
+            android:layout_width="180dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="183dp"
+            android:background="@drawable/ripple_btn"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:text="@string/get_started"
+            android:textColor="#FFFF00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/developers"
-        style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/sixteen_dips"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
-        android:text="@string/dev_credits"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/dev_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dev_textView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:shadowColor="#FF8206"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="15"
+            android:text="@string/dev_name"
+            android:textColor="#FF8206"
+            android:textStyle="bold"
+            tools:fontFamily="@font/roboto_slab" />
+
+        <TextView
+            android:id="@+id/textView_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dev_textView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:padding="2dp"
+            android:shadowColor="#FF8206"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="15"
+            android:textColor="#FF8206"
+            tools:fontFamily="@font/roboto_slab" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
