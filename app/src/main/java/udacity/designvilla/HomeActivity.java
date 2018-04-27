@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import com.example.android.splashscreenjava.R;
 import com.rom4ek.arcnavigationview.ArcNavigationView;
 
+import java.util.Objects;
+
 public class HomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -35,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(actionBar).setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.drawer_icon);
 

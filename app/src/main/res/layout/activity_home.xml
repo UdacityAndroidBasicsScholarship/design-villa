@@ -12,7 +12,7 @@
         style="@style/mmv">
 
         <android.support.v7.widget.Toolbar
-            app:titleTextColor="@color/white"
+            app:titleTextColor="@android:color/white"
             android:id="@+id/tool_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -23,7 +23,7 @@
             style="@style/match_parent"
             android:gravity="center"
             android:text="@string/this_is_the_third_activity"
-            android:textSize="@dimen/thirty_sp" />
+            android:textSize="32sp" />
 
     </LinearLayout>
 
@@ -34,7 +34,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/drawer_header"
         app:arc_cropDirection="cropInside"
-        app:arc_width="@dimen/hundred_dips"
+        app:arc_width="@dimen/arc_width"
         app:menu="@menu/drawer_options"
         android:layoutDirection="ltr"
         android:background="@color/colorPrimary"/>

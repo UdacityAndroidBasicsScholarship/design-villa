@@ -15,7 +15,7 @@ import udacity.designvilla.Util.SystemBarColorScheme;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private final static int TIME_OUT = 3000;
+    private final static int TIME_OUT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,6 @@ public class SplashScreenActivity extends AppCompatActivity {
 
                 ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation
                         (SplashScreenActivity.this, findViewById(R.id.logo_image), getResources().getString(R.string.transition_element));
-
                 startActivity(intent, activityOptionsCompat.toBundle());
             }
         }, TIME_OUT);

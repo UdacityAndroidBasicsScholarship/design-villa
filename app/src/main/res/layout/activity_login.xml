@@ -12,8 +12,8 @@
     <ImageView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/one_fifty_dips"
-        android:layout_marginBottom="@dimen/thirty_dips"
+        android:layout_height="@dimen/login_logo_height"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:contentDescription="@string/app_logo"
@@ -31,7 +31,7 @@
         android:text="@string/welcome_msg"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textSize="@dimen/thirty_sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
         style="@style/wrap_content"
         android:layout_marginEnd="@dimen/eight_dips"
         android:layout_marginStart="@dimen/eight_dips"
-        android:layout_marginTop="@dimen/twenty_eight_dips"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tagline" />
@@ -64,7 +64,7 @@
     <TextView
         android:id="@+id/footer_text"
         style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/twenty_eight_dips"
+        android:layout_marginBottom="24dp"
         android:text="@string/terms_and_policy"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"

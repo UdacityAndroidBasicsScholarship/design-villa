@@ -4,9 +4,9 @@
 
     <TextView
         style="@style/match_parent_wrap_content"
-        android:layout_margin="@dimen/twenty_dips"
+        android:layout_margin="24dp"
         android:gravity="center"
         android:text="@string/title"
-        android:textSize="@dimen/thirty_sp" />
+        android:textSize="32sp" />
 
 </LinearLayout>
