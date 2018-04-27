@@ -1,73 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
-    android:background="@android:color/white"
-    android:orientation="vertical"
-    tools:context="udacity.designvilla.LoginActivity"
-    tools:layout_editor_absoluteY="25">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_bg"
+    android:background="@drawable/img_bg"
+    tools:context="udacity.designvilla.LoginActivity">
 
     <ImageView
-        android:id="@+id/app_name"
-        android:layout_width="@dimen/one_fifty_dips"
-        android:layout_height="@dimen/one_fifty_dips"
-        android:layout_marginBottom="@dimen/thirty_dips"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
-        android:contentDescription="@string/app_logo"
-        android:transitionName="@string/transition_element"
-        app:layout_constraintBottom_toTopOf="@+id/welcome_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        android:id="@+id/imageView"
+        android:layout_width="248dp"
+        android:layout_height="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:contentDescription="@string/AppLogo"
+        android:src="@drawable/third_logo" />
 
-    <TextView
-        android:id="@+id/welcome_text"
-        style="@style/wrap_content"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
-        android:text="@string/welcome_msg"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textSize="@dimen/thirty_sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tagline"
-        style="@style/wrap_content"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
-        android:layout_marginTop="@dimen/eight_dips"
-        android:text="@string/tag_line"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
-        style="@style/wrap_content"
-        android:layout_marginEnd="@dimen/eight_dips"
-        android:layout_marginStart="@dimen/eight_dips"
-        android:layout_marginTop="@dimen/twenty_eight_dips"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tagline" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:visibility="visible"
+        tools:visibility="gone"/>
 
     <TextView
-        android:id="@+id/footer_text"
-        style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/twenty_eight_dips"
-        android:text="@string/terms_and_policy"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:padding="5dp"
+        android:text="@string/signed_out"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dev_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/dev_textView"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:shadowColor="#FF8206"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="15"
+        android:textColor="#FF8206"
+        android:textStyle="bold"
+        tools:fontFamily="@font/roboto_slab"
+        android:text="@string/dev_name" />
+
+</RelativeLayout>
