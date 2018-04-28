@@ -43,6 +43,30 @@ public class HomeActivity extends AppCompatActivity {
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                switch (id){
+                    case R.id.favourites:
+                        // On clicking the favourite item, it wil open the favourites Activity
+                        Intent i = new Intent(HomeActivity.this, FavouriteActivity.class);
+                        startActivity(i);
+                        break;
+                    case R.id.about:
+                        AlertDialog alertDialog = new AlertDialog.Builder(
+                                HomeActivity.this).create();
+
+                        // Setting Dialog Title
+                        alertDialog.setTitle("Design Villa");
+
+                        // Setting Dialog Message
+                        alertDialog.setMessage("~ Version 1.0" + '\n' + "~ Developed by Codevengers" + '\n' + "~ All Rights Reserved");
+
+                        // Setting Icon to Dialog
+                        alertDialog.setIcon(R.drawable.design_villa);
+
+                        // Showing Alert Message
+                        alertDialog.show();
+                        break;
+                }
                 // set item as selected to persist highlight
                 item.setChecked(true);
                 //close the navigation bar when clicked
@@ -81,6 +105,7 @@ public class HomeActivity extends AppCompatActivity {
                 alertDialog.setCancelable(false);
                 alertDialog.show();
                 break;
+
         }
         return super.onOptionsItemSelected(item);
     }

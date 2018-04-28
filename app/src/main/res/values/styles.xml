@@ -19,7 +19,7 @@
 
     <style name="mmv">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">192dp</item>
         <item name="android:orientation">vertical</item>
     </style>
 
