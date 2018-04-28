@@ -36,10 +36,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     //Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        holder.templateImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         holder.templateImageView.setImageDrawable(
                 ContextCompat.getDrawable(mContext,
                         templateHolderList.get(position).getTemplateResourceId()));
-        Log.v("At BindViewHolder", String.valueOf(holder));
+        int cellHeight = holder.templateImageView.getHeight();
+        Log.v("Cell Height", String.valueOf(cellHeight));
     }
 
     //Return the size of dataset (invoked by layout manager

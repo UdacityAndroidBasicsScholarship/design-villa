@@ -87,9 +87,16 @@ public class HomeActivity extends AppCompatActivity {
                     templateHolders.add(new TemplateHolder(R.drawable.a1));
                     n = 2;
                     break;
-
                 case 2:
                     templateHolders.add(new TemplateHolder(R.drawable.a2));
+                    n = 3;
+                    break;
+                case 3:
+                    templateHolders.add(new TemplateHolder(R.drawable.a3));
+                    n = 4;
+                    break;
+                case 4:
+                    templateHolders.add(new TemplateHolder(R.drawable.a4));
                     n = 1;
                     break;
             }
