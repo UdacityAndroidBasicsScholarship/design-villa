@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         //Set Adapter
-        mAdapter = new Adapter(passDummyData(), this);
+        mAdapter = new Adapter(passDummyData());
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -84,19 +84,19 @@ public class HomeActivity extends AppCompatActivity {
         for (int i = 0; i < 15; i++) {
             switch (n) {
                 case 1:
-                    templateHolders.add(new TemplateHolder(R.drawable.a1));
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a1)));
                     n = 2;
                     break;
                 case 2:
-                    templateHolders.add(new TemplateHolder(R.drawable.a2));
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a2)));
                     n = 3;
                     break;
                 case 3:
-                    templateHolders.add(new TemplateHolder(R.drawable.a3));
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a3)));
                     n = 4;
                     break;
                 case 4:
-                    templateHolders.add(new TemplateHolder(R.drawable.a4));
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a4)));
                     n = 1;
                     break;
             }

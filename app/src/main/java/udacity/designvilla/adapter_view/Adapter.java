@@ -1,7 +1,5 @@
 package udacity.designvilla.adapter_view;
 
-import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,11 +13,9 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private List<TemplateHolder> templateHolderList;
-    private Context mContext;
 
-    public Adapter(List<TemplateHolder> templateHolders, Context context) {
+    public Adapter(List<TemplateHolder> templateHolders) {
         templateHolderList = templateHolders;
-        mContext = context;
     }
 
     //Create new views (invoked by the layout manager)
@@ -37,9 +33,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.templateImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        holder.templateImageView.setImageDrawable(
-                ContextCompat.getDrawable(mContext,
-                        templateHolderList.get(position).getTemplateResourceId()));
+        holder.templateImageView.setImageDrawable(templateHolderList.get(position).getTemplateImage());
         int cellHeight = holder.templateImageView.getHeight();
         Log.v("Cell Height", String.valueOf(cellHeight));
     }

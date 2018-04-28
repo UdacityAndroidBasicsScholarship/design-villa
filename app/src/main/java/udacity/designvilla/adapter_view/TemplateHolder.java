@@ -1,13 +1,15 @@
 package udacity.designvilla.adapter_view;
 
-public class TemplateHolder {
-    private int mTemplateResourceId;
+import android.graphics.drawable.Drawable;
 
-    public TemplateHolder(int templateResourceId) {
-        mTemplateResourceId = templateResourceId;
+public class TemplateHolder {
+    private Drawable mTemplateImage;
+
+    public TemplateHolder(Drawable templateImage) {
+        mTemplateImage = templateImage;
     }
 
-    public int getTemplateResourceId() {
-        return mTemplateResourceId;
+    public Drawable getTemplateImage() {
+        return mTemplateImage;
     }
 }
