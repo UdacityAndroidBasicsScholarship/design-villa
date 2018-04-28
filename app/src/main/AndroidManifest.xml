@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
 
         <!-- Splash Activity -->
-        <activity android:name="udacity.designvilla.SplashScreenActivity"
+        <activity
+            android:name="udacity.designvilla.SplashScreenActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name="udacity.designvilla.LoginActivity" />
-
-
-        <activity android:name="udacity.designvilla.HomeActivity"></activity>
+        <activity android:name="udacity.designvilla.HomeActivity" />
+        <activity android:name="udacity.designvilla.FavouritesActivity"></activity>
     </application>
 
 </manifest>
