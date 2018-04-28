@@ -11,10 +11,12 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="this_is_the_third_activity">This is the third activity</string>
+    <string name="this_is_the_third_activity">This is Sarfraz</string>
     <string name="sign_out">Sign out</string>
     <string name="exit_">Exit</string>
     <string name="title">Title</string>
+
+    <string name="info">Made by Code Avengers</string>
 
     <!--Nav Drawer Menu Items-->
     <string name="home">Home</string>
@@ -24,6 +26,9 @@
     <string name="about">About</string>
     <string name="rate_us">Rate Us</string>
     <string name="github_link">GitHub</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

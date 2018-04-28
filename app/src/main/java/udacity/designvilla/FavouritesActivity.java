@@ -20,17 +20,15 @@ import com.rom4ek.arcnavigationview.ArcNavigationView;
 
 import java.util.Objects;
 
-public class HomeActivity extends AppCompatActivity  {
-
+public class FavouritesActivity extends AppCompatActivity {
+    private Toolbar mToolbar;
     private DrawerLayout mDrawerLayout;
     private ArcNavigationView mNavigationView;
-    private Toolbar mToolbar;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_favourites);
+
 
         mDrawerLayout = findViewById(R.id.home_navigation_layout);
         mNavigationView = findViewById(R.id.home_navigation_view);
@@ -135,4 +133,7 @@ public class HomeActivity extends AppCompatActivity  {
         alertDialog.show();
     }
 
+
+
 }
+

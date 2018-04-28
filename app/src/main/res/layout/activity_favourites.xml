@@ -2,11 +2,11 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:id="@+id/home_navigation_layout"
-    tools:context="udacity.designvilla.HomeActivity">
+    tools:context="udacity.designvilla.FavouritesActivity">
 
-    <!-- The contents should be within the linear layout. You can change it to any layout -->
     <LinearLayout
         android:id="@+id/content_holder_layout"
         style="@style/mmv">
@@ -22,7 +22,7 @@
         <TextView
             style="@style/match_parent"
             android:gravity="center"
-            android:text="@string/this_is_the_third_activity"
+            android:text="Favourites"
             android:textSize="32sp" />
 
     </LinearLayout>
@@ -38,7 +38,6 @@
         app:menu="@menu/drawer_options"
         android:layoutDirection="ltr"
         android:background="@color/colorPrimaryDark"/>
-
 
 
 </android.support.v4.widget.DrawerLayout>
