@@ -29,4 +29,5 @@ dependencies {
     //google sign-in dependency
     implementation 'com.google.android.gms:play-services-auth:15.0.0'
     implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
 }
