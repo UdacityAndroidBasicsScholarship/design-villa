@@ -3,4 +3,5 @@
     <color name="colorPrimary">#A8D61F</color>
     <color name="colorPrimaryDark">#159133</color>
     <color name="colorAccent">#FFE800</color>
+    <color name="drawer_background_tint">#585</color>
 </resources>

@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/mmv">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_parent_wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundred_dips"
+        android:alpha="0.6"
+        android:contentDescription="@string/drawer_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abstract_background_menu"
+        android:tint="@color/drawer_background_tint"
+        android:tintMode="screen" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/seventy_five_dips"
+        android:layout_height="@dimen/seventy_five_dips"
+        android:layout_marginStart="@dimen/sixteen_dips"
+        android:layout_marginTop="@dimen/forty_eight_dips"
+        android:background="@drawable/user_image_background"
+        android:contentDescription="@string/user_image"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
-        style="@style/match_parent_wrap_content"
-        android:layout_margin="24dp"
-        android:gravity="center"
-        android:text="@string/title"
-        android:textSize="32sp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_margin="@dimen/sixteen_dips"
+        android:text="@string/email"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
 
-</LinearLayout>
+
+</RelativeLayout>

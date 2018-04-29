@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:title="@string/sign_out" />
-        <item android:title="@string/exit_"
-            android:id="@+id/exit"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/sign_out" />
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit_" />
+    <item
+        android:id="@+id/grid_list_switch"
+        android:icon="@drawable/ic_view_compact_black_24dp"
+        android:title="@string/grid_list_switch"
+        app:showAsAction="always" />
 </menu>
