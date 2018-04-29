@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Design Villa</string>
-    <string name="login_activity">Login Activity</string>
     <string name="app_version">Version 1.0</string>
     <string name="welcome_msg">Welcome to Design Villa</string>
     <string name="tag_line">Discover best android design practices</string>
@@ -8,22 +7,11 @@
     <string name="dev_credits">Made with \u2764 by Codevengers</string>
     <string name="app_logo">app logo</string>
     <string name="transition_element">LogoTransition</string>
-    <string name="exit">EXIT</string>
-    <string name="are_you_sure">Are you sure?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="this_is_the_third_activity">This is the third activity</string>
-    <string name="sign_out">Sign out</string>
-    <string name="exit_">Exit</string>
-    <string name="title">Title</string>
 
     <!--Nav Drawer Menu Items-->
     <string name="home">Home</string>
     <string name="favourites">Favourites</string>
-    <string name="help">Help</string>
-    <string name="contact_us">Contact Us</string>
     <string name="about">About</string>
-    <string name="rate_us">Rate Us</string>
     <string name="github_link">GitHub</string>
 
 

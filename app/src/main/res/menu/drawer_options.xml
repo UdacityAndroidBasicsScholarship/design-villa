@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-
         <item android:id="@+id/home" android:title="@string/home" android:icon="@drawable/ic_home_black_24dp"/>
         <item android:id="@+id/favourites" android:title="@string/favourites" android:icon="@drawable/ic_favorite_black_24dp"/>
         <item android:id="@+id/help" android:title="@string/help" android:icon="@drawable/ic_help_black_24dp" />
@@ -11,6 +10,25 @@
         <item android:id="@+id/about" android:title="@string/about" android:icon="@drawable/ic_announcement_black_24dp"/>
         <item android:id="@+id/rate" android:title="@string/rate_us" android:icon="@drawable/ic_grade_white_24dp"/>
         
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/favourites"
+            android:title="@string/favourites" />
+        <item
+            android:id="@+id/github"
+            android:title="@string/github_link" />
+        <item
+            android:id="@+id/about"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/sign_out"
+            android:title="Sign Out" />
+        <item
+            android:id="@+id/exit"
+            android:title="Exit" />
     </group>
 
 
