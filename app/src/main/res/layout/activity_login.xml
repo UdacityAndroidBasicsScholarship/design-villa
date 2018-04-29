@@ -2,7 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/match_parent"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
     tools:context="udacity.designvilla.LoginActivity"
@@ -11,21 +13,24 @@
 
     <ImageView
         android:id="@+id/app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/login_logo_height"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
         android:contentDescription="@string/app_logo"
         android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toTopOf="@+id/welcome_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/design_villa" />
 
     <TextView
         android:id="@+id/welcome_text"
-        style="@style/wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/welcome_msg"
@@ -40,20 +45,21 @@
 
     <TextView
         android:id="@+id/tagline"
-        style="@style/wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:layout_marginTop="@dimen/eight_dips"
         android:text="@string/tag_line"
         android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
-        style="@style/wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/eight_dips"
         android:layout_marginStart="@dimen/eight_dips"
         android:layout_marginTop="32dp"
@@ -63,7 +69,8 @@
 
     <TextView
         android:id="@+id/footer_text"
-        style="@style/wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/terms_and_policy"
         android:textAlignment="center"
