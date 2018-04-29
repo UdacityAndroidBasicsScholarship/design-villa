@@ -24,6 +24,7 @@
 
 
         <activity android:name="udacity.designvilla.HomeActivity" />
+        <activity android:name="udacity.designvilla.FavouriteActivity"></activity>
     </application>
 
 </manifest>
