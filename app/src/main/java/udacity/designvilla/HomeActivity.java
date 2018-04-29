@@ -12,8 +12,11 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.android.splashscreenjava.R;
@@ -21,13 +24,22 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.rom4ek.arcnavigationview.ArcNavigationView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+
+import udacity.designvilla.adapter_view.Adapter;
+import udacity.designvilla.adapter_view.TemplateHolder;
 
 public class HomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ArcNavigationView mNavigationView;
     private Toolbar mToolbar;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private List<TemplateHolder> templateHolders;
     private FirebaseUser mUser;
 
     @Override
@@ -98,6 +110,43 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        //RecyclerView
+        mRecyclerView = findViewById(R.id.template_recycler_view);
+
+        //Use a Staggered Layout Manager
+        mLayoutManager = new StaggeredGridLayoutManager(2,
+                StaggeredGridLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        //Set Adapter
+        mAdapter = new Adapter(passDummyData());
+        mRecyclerView.setAdapter(mAdapter);
+    }
+
+    private List<TemplateHolder> passDummyData() {
+        templateHolders = new ArrayList<>();
+        int n = 1;
+        for (int i = 0; i < 15; i++) {
+            switch (n) {
+                case 1:
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a1)));
+                    n = 2;
+                    break;
+                case 2:
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a2)));
+                    n = 3;
+                    break;
+                case 3:
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a3)));
+                    n = 4;
+                    break;
+                case 4:
+                    templateHolders.add(new TemplateHolder(getDrawable(R.drawable.a4)));
+                    n = 1;
+                    break;
+            }
+        }
+        return templateHolders;
     }
 
     @Override
@@ -109,6 +158,7 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(loginIntent);
             finish();
         }
+
 
     }
 
