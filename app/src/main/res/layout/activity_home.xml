@@ -7,10 +7,11 @@
     android:layout_height="match_parent"
     tools:context="udacity.designvilla.HomeActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/tool_bar"
@@ -20,7 +21,16 @@
             android:theme="@style/AppTheme"
             app:titleTextColor="@android:color/white" />
 
-    </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding" />
+
+
+    </LinearLayout>
 
     <com.rom4ek.arcnavigationview.ArcNavigationView
         android:id="@+id/home_navigation_view"
