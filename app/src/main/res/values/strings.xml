@@ -13,6 +13,43 @@
     <string name="favourites">Favourites</string>
     <string name="about">About</string>
     <string name="github_link">GitHub</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+
+
+    <string name="exit">EXIT</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="this_is_the_third_activity">This is the third activity</string>
+    <string name="sign_out">Sign out</string>
+    <string name="exit_">Exit</string>
+    <string name="title">Title</string>
+
+    <!--Nav Drawer Menu Items-->
+    <string name="help">Help</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="image">image</string>
+    <string name="more_icon">more_icon</string>
+    <string name="add_favourite">Add to Favourites</string>
+
+    <string name="image1">image 1</string>
+    <string name="image2">image 2</string>
+    <string name="image3">image 3</string>
+    <string name="image4">image 4</string>
+    <string name="image5">image 5</string>
+    <string name="image6">image 6</string>
+    <string name="image7">image 7</string>
+    <string name="image8">image 8</string>
+    <string name="image9">image 9</string>
+    <string name="image10">image 10</string>
+    <string name="image11">image 11</string>
+    <string name="email">user@domain.com</string>
+    <string name="drawer_background">drawer_background</string>
+    <string name="user_image">user_image</string>
+    <string name="grid_list_switch">grid_list_switch</string>
+
 
 
 </resources>

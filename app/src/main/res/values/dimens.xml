@@ -3,4 +3,12 @@
     <dimen name="arc_width">96dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
     <dimen name="eight_dips">8dp</dimen>
+    <dimen name="sixteen_dips_text">16sp</dimen>
+    <dimen name="login_logo_height">152dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="two_hundred_dips">200dp</dimen>
+    <dimen name="seventy_five_dips">75dp</dimen>
+    <dimen name="forty_eight_dips">48dp</dimen>
+    <dimen name="four_dips">4dp</dimen>
 </resources>

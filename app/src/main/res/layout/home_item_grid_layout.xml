@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin"
+    android:elevation="@dimen/four_dips"
+    app:cardCornerRadius="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/image1" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:alpha="0.7"
+            app:cardCornerRadius="@dimen/four_dips"
+            app:cardElevation="@dimen/four_dips">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sixteen_dips_text"
+                android:textStyle="bold"
+                tools:text="Label" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/more_icon"
+            android:padding="@dimen/padding"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
+
