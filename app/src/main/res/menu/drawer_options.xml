@@ -14,14 +14,17 @@
             android:id="@+id/github"
             android:title="@string/github_link" />
         <item
+            android:id="@+id/settings"
+            android:title="@string/settings" />
+        <item
             android:id="@+id/about"
             android:title="@string/about" />
         <item
             android:id="@+id/sign_out"
-            android:title="Sign Out" />
+            android:title="@string/sign_out" />
         <item
             android:id="@+id/exit"
-            android:title="Exit" />
+            android:title="@string/Exit" />
 
     </group>
 
