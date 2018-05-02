@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="arc_width">96dp</dimen>
+    <dimen name="arc_width">0dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
     <dimen name="eight_dips">8dp</dimen>
+    <dimen name="profile_picture">70dp</dimen>
 </resources>
