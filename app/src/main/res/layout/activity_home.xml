@@ -3,38 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_navigation_layout"
-    style="@style/match_parent"
-    tools:context="udacity.designvilla.HomeActivity">
-
-    <!-- The contents should be within the linear layout. You can change it to any layout -->
-    <LinearLayout
-        android:id="@+id/content_holder_layout"
-        android:background="@color/colorPrimaryLight"
-        style="@style/mmv">
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="udacity.designvilla.HomeActivity">
 
+    <!-- The contents should be within the linear layout. You can change it to any layout -->
     <FrameLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/tool_bar"
+        <LinearLayout
+            android:id="@+id/content_holder_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:theme="@style/AppTheme"
-            app:titleTextColor="@android:color/white" />
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="vertical">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/template_recycler_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:theme="@style/AppTheme"
+                app:titleTextColor="@android:color/white" />
 
-    </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/template_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
     </FrameLayout>
 
     <com.rom4ek.arcnavigationview.ArcNavigationView
@@ -42,7 +41,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimary"
         android:background="@color/colorPrimaryDark"
         android:fitsSystemWindows="true"
         android:layoutDirection="ltr"
@@ -50,6 +48,4 @@
         app:arc_width="@dimen/arc_width"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer_options" />
-
-
 </android.support.v4.widget.DrawerLayout>
