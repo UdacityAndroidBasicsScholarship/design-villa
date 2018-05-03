@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     style="@style/match_parent"
-    android:background="@color/white"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
 
     <ImageView
-        android:transitionName="@string/transition_element"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splashbackground" />
+
+    <ImageView
         android:id="@+id/logo_image"
         android:layout_width="@dimen/one_seventy_dips"
         android:layout_height="@dimen/one_seventy_dips"
         android:contentDescription="@string/app_name"
         android:src="@mipmap/ic_launcher_foreground"
+        android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,8 +31,9 @@
         style="@style/wrap_content"
         android:layout_marginBottom="@dimen/sixty_four_dips"
         android:text="@string/app_name"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -41,6 +46,7 @@
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/app_version"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -51,14 +57,15 @@
     <TextView
         android:id="@+id/developers"
         style="@style/wrap_content"
-        android:layout_marginBottom="@dimen/sixteen_dips"
-        android:layout_marginEnd="@dimen/sixteen_dips"
-        android:layout_marginStart="@dimen/sixteen_dips"
+        android:layout_width="215dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/dev_credits"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
