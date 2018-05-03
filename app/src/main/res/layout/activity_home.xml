@@ -28,10 +28,12 @@
                 android:theme="@style/AppTheme"
                 app:titleTextColor="@android:color/white" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/template_recycler_view"
+            <!--The below Linear Layout is placed only to be replaced during fragment Transaction-->
+            <LinearLayout
+                android:id="@+id/activity_home_replaceable_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </FrameLayout>
