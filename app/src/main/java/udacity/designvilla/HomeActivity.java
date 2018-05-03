@@ -83,6 +83,8 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case R.id.exit:
                         //TODO:Implement exit dialog
+                        finish();
+                        System.exit(0);
                         break;
                     default:
                         fragment = new HomeFragment();
