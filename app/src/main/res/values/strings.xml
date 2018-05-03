@@ -1,18 +1,35 @@
 <resources>
+    <!--Base screen: 4.0 inch. Supports screen size: up to available-->
+    <!--App name being appeared on splash screen as well as on toolBar [CHAR LIMIT == 20, single line]-->
     <string name="app_name">Design Villa</string>
+    <!--Version of the app being appeared on splash screen [CHAR LIMIT == 20, single line]-->
     <string name="app_version">Version 1.0</string>
+    <!--Welcome message being appeared on "log in" screen [CHAR LIMIT == 50, single line]-->
     <string name="welcome_msg">Welcome to Design Villa</string>
+    <!--Tag line being appeared on "log in" screen [CHAR LIMIT == 90, Two lines max]-->
     <string name="tag_line">Discover best android design practices</string>
+    <!--Text label about terms and policy being appeared on "Log In" screen [CHAR LIMIT == 90], Two lines max-->
     <string name="terms_and_policy">Terms of service and privacy policy</string>
+    <!--Text label that shows credits of creators on "Splash screen" [CHAR LIMIT == 40], Single line, exclude unicode char-->
     <string name="dev_credits">Made with \u2764 by Codevengers</string>
+    <!--Content description of app logo being appeared on "Log In" screen to give accessibility support [CHAR LIMIT == NO]-->
     <string name="app_logo">app logo</string>
+    <!--Common transition name for shared element to serve transition animation [CHAR LIMIT == NO], Can be excluded for translator-->
     <string name="transition_element">LogoTransition</string>
 
     <!--Nav Drawer Menu Items-->
+    <!--A menu option being appeared on drawer view [CHAR LIMIT == 20], Single line-->
     <string name="home">Home</string>
+    <!--A menu option being appeared on drawer view [CHAR LIMIT == 20], Single line-->
     <string name="favourites">Favourites</string>
+    <!--A menu option being appeared on drawer view [CHAR LIMIT == 20], Single line-->
     <string name="about">About</string>
+    <!--A menu option being appeared on drawer view [CHAR LIMIT == 20], Single line-->
     <string name="github_link">GitHub</string>
 
-
+    <!--Other string resources-->
+    <!--Long placeholder for testing purpose [CHAR LIMIT == NO, Multiple line]-->
+    <string name="label_placeholder_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <!--Short placeholder for testing purpose [CHAR LIMIT == 50, Single line]-->
+    <string name="label_placeholder_short">Placeholder</string>
 </resources>
