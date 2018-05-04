@@ -50,7 +50,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
         FragmentTransaction tx = getFragmentManager().beginTransaction();
-        tx.replace(R.id.main_layout, new HomeFragment());
+        //Replacing just an unused LinearLayout so as to use Navigation Drawer and ToolBar in every fragment
+        tx.replace(R.id.activity_home_replaceable_view, new HomeFragment());
         tx.commit();
 
 
@@ -124,14 +125,13 @@ public class HomeActivity extends AppCompatActivity {
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.main_layout, fragment);
+                transaction.replace(R.id.activity_home_replaceable_view, fragment);
                 transaction.commit();
                 //close the navigation bar when clicked
                 mDrawerLayout.closeDrawers();
                 return true;
             }
         });
-
     }
 
     @Override
@@ -143,6 +143,7 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(loginIntent);
             finish();
         }
+
 
     }
 

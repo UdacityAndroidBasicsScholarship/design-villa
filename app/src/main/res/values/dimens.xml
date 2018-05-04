@@ -3,4 +3,7 @@
     <dimen name="arc_width">96dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
     <dimen name="eight_dips">8dp</dimen>
+
+    <!--Corner Radius-->
+    <dimen name="card_corner_radius">32dp</dimen>
 </resources>
