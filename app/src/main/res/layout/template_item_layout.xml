@@ -11,13 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <TextView
             android:id="@+id/template_image_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:maxHeight="300dp"
-            android:src="@drawable/a1" />
+            android:maxHeight="300dp" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>

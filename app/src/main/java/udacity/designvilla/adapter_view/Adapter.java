@@ -1,11 +1,10 @@
 package udacity.designvilla.adapter_view;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.android.splashscreenjava.R;
 
@@ -32,10 +31,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     //Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.templateImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        holder.templateImageView.setImageDrawable(templateHolderList.get(position).getTemplateImage());
-        int cellHeight = holder.templateImageView.getHeight();
-        Log.v("Cell Height", String.valueOf(cellHeight));
+        //Code commented out till we get image urls to show up on textviews.
+        //holder.templateImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        //holder.templateImageView.setImageDrawable(templateHolderList.get(position).getTemplateImage());
+        //int cellHeight = holder.templateImageView.getHeight();
+        //Log.v("Cell Height", String.valueOf(cellHeight));
+        holder.templateImageView.setText(templateHolderList.get(position).getTemplateImage()); // temp code to fill the templates with url
     }
 
     //Return the size of dataset (invoked by layout manager
@@ -46,7 +47,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     //Find all Views
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView templateImageView;
+        TextView templateImageView;
 
         public ViewHolder(View view) {
             super(view);
