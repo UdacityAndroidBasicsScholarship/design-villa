@@ -10,19 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--Splash Activity-->
-        <activity android:name="udacity.designvilla.SplashScreenActivity">
+        <!-- Splash Activity -->
+        <activity
+            android:name="udacity.designvilla.SplashScreenActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="udacity.designvilla.LoginActivity"></activity>
+        <activity android:name="udacity.designvilla.LoginActivity" />
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="udacity.designvilla.HomeActivity" />
     </application>
 
 </manifest>
