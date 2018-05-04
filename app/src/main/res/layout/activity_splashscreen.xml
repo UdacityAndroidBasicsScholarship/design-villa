@@ -3,12 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
-
+    style="@style/match_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context="udacity.designvilla.SplashScreenActivity">
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splashbackground" />
 
     <ImageView
         android:id="@+id/logo_image"
@@ -20,6 +26,7 @@
         android:layout_marginTop="128dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher_foreground"
         android:cropToPadding="true"
         android:src="@drawable/design_villa"
         android:transitionName="@string/transition_element"
@@ -31,13 +38,13 @@
 
     <TextView
         android:id="@+id/app_name"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/app_name"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/app_version"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -51,6 +58,8 @@
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/app_version"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/developers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -60,6 +69,10 @@
 
     <TextView
         android:id="@+id/developers"
+        style="@style/wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -67,9 +80,10 @@
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/dev_credits"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
+  
 </android.support.constraint.ConstraintLayout>
