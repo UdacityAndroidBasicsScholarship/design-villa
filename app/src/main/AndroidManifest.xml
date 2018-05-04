@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.splashscreenjava">
+          package="com.example.android.splashscreenjava">
 
     <application
         android:allowBackup="true"
@@ -10,20 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                />
+        </provider>
+
         <!-- Splash Activity -->
         <activity
             android:name="udacity.designvilla.SplashScreenActivity"
             android:noHistory="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="udacity.designvilla.LoginActivity" />
-
-
-        <activity android:name="udacity.designvilla.HomeActivity" />
+        <activity android:name="udacity.designvilla.LoginActivity"/>
+        <activity android:name="udacity.designvilla.HomeActivity"/>
     </application>
 
 </manifest>
