@@ -129,6 +129,7 @@
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview-2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore-15.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide-4.7.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-15.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-27.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
@@ -147,10 +148,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-3.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection-15.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:gifdecoder-4.6.1" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-firestore-3.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.6.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:disklrucache:4.6.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-15.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
@@ -166,11 +165,10 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage-common-15.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-15.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide-4.6.1" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-database-3.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.6.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:disklrucache:4.7.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-identifier-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-15.1.0" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:extensions-1.1.0" level="project" />
@@ -185,8 +183,10 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-15.0.2" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-auth-3.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:gifdecoder-4.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.7.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-flags-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android-android-27" level="project" />

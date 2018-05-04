@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,7 +76,7 @@ public class HomeFragment extends Fragment {
                     }
                 }
             });
-            Query firstQuery = firebaseFirestore.collection("templates").limit(3);
+            Query firstQuery = firebaseFirestore.collection("templates").limit(4);
             firstQuery.addSnapshotListener(getActivity(), new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
@@ -93,7 +92,6 @@ public class HomeFragment extends Fragment {
                             if (doc.getType() == DocumentChange.Type.ADDED) {
                                 String image_url = doc.getDocument().getId();
                                 TemplateHolder template = doc.getDocument().toObject(TemplateHolder.class).withId(image_url);
-                                Log.v("template", String.valueOf(template.getImage_url()));
 
                                 if (isFirstPageFirstLoad) {
                                     templateHolders.add(template);
@@ -119,6 +117,27 @@ public class HomeFragment extends Fragment {
             Query nextQuery = firebaseFirestore.collection("templates")
                     .startAfter(lastVisible)
                     .limit(3);
+
+            nextQuery.addSnapshotListener(getActivity(), new EventListener<QuerySnapshot>() {
+                @Override
+                public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
+                    if (!queryDocumentSnapshots.isEmpty()) {
+                        lastVisible = queryDocumentSnapshots.getDocuments().get(queryDocumentSnapshots.size() - 1);
+                        for (DocumentChange doc : queryDocumentSnapshots.getDocumentChanges()) {
+
+                            if (doc.getType() == DocumentChange.Type.ADDED) {
+
+                                String imageUrlId = doc.getDocument().getId();
+                                TemplateHolder template = doc.getDocument().toObject(TemplateHolder.class).withId(imageUrlId);
+                                templateHolders.add(template);
+
+                                mAdapter.notifyDataSetChanged();
+                            }
+
+                        }
+                    }
+                }
+            });
         }
     }
 
