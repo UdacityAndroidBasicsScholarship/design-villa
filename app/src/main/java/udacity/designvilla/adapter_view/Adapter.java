@@ -36,7 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         //holder.templateImageView.setImageDrawable(templateHolderList.get(position).getTemplateImage());
         //int cellHeight = holder.templateImageView.getHeight();
         //Log.v("Cell Height", String.valueOf(cellHeight));
-        holder.templateImageView.setText(templateHolderList.get(position).getTemplateImage()); // temp code to fill the templates with url
+        holder.templateImageView.setText(templateHolderList.get(position).getImage_url()); // temp code to fill the templates with url
     }
 
     //Return the size of dataset (invoked by layout manager
