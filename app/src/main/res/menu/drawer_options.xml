@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
 
-        <item android:id="@+id/home" android:title="@string/home" android:icon="@drawable/ic_home_black_24dp"/>
-        <item android:id="@+id/favourites" android:title="@string/favourites" android:icon="@drawable/ic_favorite_black_24dp"/>
-        <item android:id="@+id/help" android:title="@string/help" android:icon="@drawable/ic_help_black_24dp" />
-        <item android:id="@+id/contact" android:title="@string/contact_us" android:icon="@drawable/ic_phone_black_24dp" />
-        <item android:id="@+id/github" android:title="@string/github_link" android:icon="@drawable/github" />
-        <item android:id="@+id/about" android:title="@string/about" android:icon="@drawable/ic_announcement_black_24dp"/>
-        <item android:id="@+id/exit" android:title="@string/exit" android:icon="@drawable/ic_exit_to_app_black_24dp"/>
-        <item android:id="@+id/sign_out" android:title="@string/sign_out" android:icon="@drawable/sign_out"/>
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/favourites"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/favourites" />
+        <item
+            android:id="@+id/github"
+            android:icon="@drawable/github"
+            android:title="@string/github_link" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/about" />
 
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/exit"
+            android:title="@string/exit" />
+        <item
+            android:id="@+id/sign_out"
+            android:title="@string/sign_out" />
     </group>
 
 
