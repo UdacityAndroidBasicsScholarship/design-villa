@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -15,6 +16,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.splashscreenjava.R;
@@ -36,7 +38,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         mDrawerLayout = findViewById(R.id.home_navigation_layout);
         mNavigationView = findViewById(R.id.home_navigation_view);
 
@@ -48,11 +49,9 @@ public class HomeActivity extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.drawer_icon);
 
-
         FragmentTransaction tx = getFragmentManager().beginTransaction();
         tx.replace(R.id.main_layout, new HomeFragment());
         tx.commit();
-
 
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -155,4 +154,5 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

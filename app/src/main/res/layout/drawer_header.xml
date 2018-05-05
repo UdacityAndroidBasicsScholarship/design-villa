@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/profile_picture"
+        android:layout_height="@dimen/profile_picture"
+        android:layout_marginTop="@dimen/eight_dips"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal_background" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight_dips"
+        android:text="@string/user_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="@dimen/sixteen_dips" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+</android.support.constraint.ConstraintLayout>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/mmv"
@@ -50,5 +97,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0.0" />
+<<<<<<< HEAD
+>>>>>>> 829b9abf8444d0bfc1b81bac022fc12c34ae5b3d
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
 
-</android.support.constraint.ConstraintLayout>
+</ConstraintLayout>
