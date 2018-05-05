@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,7 +43,10 @@
         app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
 </android.support.constraint.ConstraintLayout>
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/mmv"
@@ -91,5 +97,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0.0" />
+<<<<<<< HEAD
 >>>>>>> 829b9abf8444d0bfc1b81bac022fc12c34ae5b3d
+=======
+>>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
 
+</ConstraintLayout>
