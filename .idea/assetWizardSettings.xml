@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_favorite_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_contact_phone_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ff5143" />
-                            <entry key="outputName" value="ic_favorite_black_24dp" />
-                            <entry key="sourceFile" value="C:\Users\Akshay" />
+                            <entry key="outputName" value="ic_contact" />
+                            <entry key="sourceFile" value="C:\Users\MAHE\Desktop\ic_github.svg" />
                           </map>
                         </option>
                       </PersistentState>
