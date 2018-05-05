@@ -3,6 +3,7 @@
 
     <group android:checkableBehavior="single">
 
+<<<<<<< HEAD
         <item
             android:id="@+id/home"
             android:checked="true"
@@ -25,6 +26,16 @@
         <item
             android:id="@+id/exit"
             android:title="@string/Exit" />
+=======
+        <item android:id="@+id/home" android:title="@string/home" android:icon="@drawable/ic_home_black_24dp"/>
+        <item android:id="@+id/favourites" android:title="@string/favourites" android:icon="@drawable/ic_favorite_black_24dp"/>
+        <item android:id="@+id/help" android:title="@string/help" android:icon="@drawable/ic_help_black_24dp" />
+        <item android:id="@+id/contact" android:title="@string/contact_us" android:icon="@drawable/ic_phone_black_24dp" />
+        <item android:id="@+id/github" android:title="@string/github_link" android:icon="@drawable/github" />
+        <item android:id="@+id/about" android:title="@string/about" android:icon="@drawable/ic_announcement_black_24dp"/>
+        <item android:id="@+id/exit" android:title="@string/exit" android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+        <item android:id="@+id/sign_out" android:title="@string/sign_out" android:icon="@drawable/sign_out"/>
+>>>>>>> 829b9abf8444d0bfc1b81bac022fc12c34ae5b3d
 
     </group>
 
