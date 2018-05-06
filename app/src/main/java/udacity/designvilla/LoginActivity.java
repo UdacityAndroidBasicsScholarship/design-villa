@@ -102,6 +102,20 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    //Method packs bundle for Splash and Login activity both
+    public static Intent packProfileBundle(FirebaseUser user, Intent homeIntent) {
+        //Name, Email and ProfileUri to be bundled onto Home Activity
+        String profileEmail = user.getEmail();
+        String profileName = user.getDisplayName();
+        String photoUrl = user.getPhotoUrl().toString();
+
+        homeIntent.putExtra("profileEmail", profileEmail);
+        homeIntent.putExtra("profileName", profileName);
+        homeIntent.putExtra("photoUrl", photoUrl);
+
+        return homeIntent;
+    }
+
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
 
@@ -116,6 +130,7 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "Welcome " + user.getDisplayName(), Toast.LENGTH_SHORT).show();
                             Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
+                            homeIntent = packProfileBundle(user, homeIntent); //Packs profileName, profileEmail and PhotoUrl
                             startActivity(homeIntent);
                             finish();
                         } else {

@@ -32,6 +32,10 @@ dependencies {
     //google sign-in dependency
     implementation 'com.google.android.gms:play-services-auth:15.0.0'
     implementation 'com.android.support:design:27.1.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
