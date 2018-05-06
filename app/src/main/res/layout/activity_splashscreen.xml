@@ -18,16 +18,11 @@
 
     <ImageView
         android:id="@+id/logo_image"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="128dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="128dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
         android:cropToPadding="true"
-        android:src="@drawable/design_villa"
         android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,5 +75,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
-  
+
 </android.support.constraint.ConstraintLayout>
