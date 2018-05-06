@@ -5,50 +5,6 @@
         android:id="@+id/menu_top"
         android:checkableBehavior="single">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
-        <item
-            android:id="@+id/home"
-            android:checked="true"
-            android:title="@string/home" />
-        <item
-            android:id="@+id/favourites"
-            android:title="@string/favourites" />
-        <item
-            android:id="@+id/github"
-            android:title="@string/github_link" />
-        <item
-            android:id="@+id/settings"
-            android:title="@string/settings" />
-        <item
-            android:id="@+id/about"
-            android:title="@string/about" />
-        <item
-            android:id="@+id/sign_out"
-            android:title="@string/sign_out" />
-        <item
-            android:id="@+id/exit"
-            android:title="@string/Exit" />
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
-        <item android:id="@+id/home" android:title="@string/home" android:icon="@drawable/ic_home_black_24dp"/>
-        <item android:id="@+id/favourites" android:title="@string/favourites" android:icon="@drawable/ic_favorite_black_24dp"/>
-        <item android:id="@+id/help" android:title="@string/help" android:icon="@drawable/ic_help_black_24dp" />
-        <item android:id="@+id/contact" android:title="@string/contact_us" android:icon="@drawable/ic_phone_black_24dp" />
-        <item android:id="@+id/github" android:title="@string/github_link" android:icon="@drawable/github" />
-        <item android:id="@+id/about" android:title="@string/about" android:icon="@drawable/ic_announcement_black_24dp"/>
-        <item android:id="@+id/exit" android:title="@string/exit" android:icon="@drawable/ic_exit_to_app_black_24dp"/>
-        <item android:id="@+id/sign_out" android:title="@string/sign_out" android:icon="@drawable/sign_out"/>
-<<<<<<< HEAD
->>>>>>> 829b9abf8444d0bfc1b81bac022fc12c34ae5b3d
-=======
->>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
-=======
         <item
             android:id="@+id/home"
             android:checked="true"
@@ -74,7 +30,6 @@
             android:id="@+id/about"
             android:icon="@drawable/ic_info"
             android:title="@string/about" />
->>>>>>> c737555820857e2fd2e450ea3cbc8c08a040925f
 
     </group>
     <group
