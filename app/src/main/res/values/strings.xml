@@ -31,10 +31,13 @@
     <string name="rate_us">Rate Us</string>
     <string name="sign_out">Sign Out</string>
     <string name="exit">Exit</string>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> 829b9abf8444d0bfc1b81bac022fc12c34ae5b3d
 
 =======
 >>>>>>> d84466752cf50b9363ce53e650a47fdc23fb1bbb
+=======
+>>>>>>> c737555820857e2fd2e450ea3cbc8c08a040925f
 </resources>

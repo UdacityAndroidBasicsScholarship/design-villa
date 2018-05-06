@@ -33,6 +33,7 @@
         app:arc_cropDirection="cropInside"
         app:arc_width="@dimen/arc_width"
         app:headerLayout="@layout/drawer_header"
+        app:itemIconTint="@drawable/drawer_icon_color"
         app:menu="@menu/drawer_options" />
 
 

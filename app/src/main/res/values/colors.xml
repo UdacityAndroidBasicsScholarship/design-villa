@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="colorPrimary">#4CAF50</color>
     <color name="colorPrimaryDark">#1B5E20</color>
     <color name="colorPrimaryLight">#A5D6A7</color>
     <color name="colorAccent">#69F0AE</color>
+=======
+    <color name="colorPrimary">#A8D61F</color>
+    <color name="colorPrimaryDark">#159133</color>
+    <color name="colorAccent">#FFE800</color>
+    <color name="colorNavIcon">#000000</color>
+>>>>>>> c737555820857e2fd2e450ea3cbc8c08a040925f
 </resources>
