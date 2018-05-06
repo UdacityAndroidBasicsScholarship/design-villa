@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
-    style="@style/match_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -18,17 +17,12 @@
 
     <ImageView
         android:id="@+id/logo_image"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="128dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="128dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
         android:src="@mipmap/ic_launcher_foreground"
         android:cropToPadding="true"
-        android:src="@drawable/design_villa"
         android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +52,7 @@
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/app_version"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/developers"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,13 +63,9 @@
 
     <TextView
         android:id="@+id/developers"
-        style="@style/wrap_content"
         android:layout_width="215dp"
         android:layout_height="17dp"
         android:layout_marginBottom="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/dev_credits"
@@ -85,5 +75,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
-  
+
 </android.support.constraint.ConstraintLayout>
