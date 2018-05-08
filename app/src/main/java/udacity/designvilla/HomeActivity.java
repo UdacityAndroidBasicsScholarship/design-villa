@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -69,10 +70,18 @@ public class    HomeActivity extends AppCompatActivity {
                         break;
                     case R.id.about:
                         //TODO:Design About layout layout_about
-                        AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-                        builder.setView(R.layout.layout_about);
-                        AlertDialog dialog = builder.create();
-                        dialog.show();
+                        AlertDialog alertDialogg = new AlertDialog.Builder(HomeActivity.this).create();
+                        // Setting Dialog Title
+                        alertDialogg.setTitle("Design Villa");
+
+                        // Setting Dialog Message
+                        alertDialogg.setMessage("~ Version 1.0" + '\n' + "~ Developed by Codevengers" + '\n' + "~ All Rights Reserved");
+
+                        // Setting Icon to Dialog
+                        alertDialogg.setIcon(R.drawable.design_villa);
+
+                        // Showing Alert Message
+                        alertDialogg.show();
                         break;
                     case R.id.sign_out:
                         FirebaseAuth.getInstance().signOut();
@@ -82,7 +91,32 @@ public class    HomeActivity extends AppCompatActivity {
                         finish();
                         break;
                     case R.id.exit:
+
                         //TODO:Implement exit dialog
+                        AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeActivity.this);
+
+                        // Setting Dialog Title
+                        alertDialog.setTitle("Exit");
+
+                        // Setting Dialog Message
+                        alertDialog.setMessage("Do you really want to exit?");
+
+                        // Setting Positive "Yes" Button
+                        alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int which) {
+
+                            }
+                        });
+
+                        // Setting Negative "NO" Button
+                        alertDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,	int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                        // Showing Alert Message
+                        alertDialog.show();
                         break;
                     default:
                         fragment = new HomeFragment();
