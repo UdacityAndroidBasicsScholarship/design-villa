@@ -23,7 +23,7 @@ import com.rom4ek.arcnavigationview.ArcNavigationView;
 
 import java.util.Objects;
 
-public class HomeActivity extends AppCompatActivity {
+public class    HomeActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ArcNavigationView mNavigationView;
