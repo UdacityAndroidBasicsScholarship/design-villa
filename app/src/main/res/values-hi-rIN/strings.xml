@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Design Villa</string>
+    <string name="home">"मुख्य पृष्ठ "</string>
+    <string name="favourites">पसंदीदा</string>
+    <string name="about">के बारे में</string>
+    <string name="contact_us">संपर्क करें</string>
+    <string name="help">मदद</string>
+    <string name="rate_us">हमें रेटिंग दें</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="exit">बाहर जाएं</string>
+    <string name="welcome_msg">डिजाइन विला में आपका स्वागत डिजाइन विला में आपका स्वागत हैडिजाइन विला में आपका स्वागत हैडिजाइन विला में आपका स्वागत है</string>
+    <string name="tag_line">सर्वश्रेष्ठ एंड्रॉइड डिजाइन प्रथाओं की खोज करें</string>
+    <string name="terms_and_policy">सेवा शर्तें और गोपनीयता नीति</string>
+</resources>
