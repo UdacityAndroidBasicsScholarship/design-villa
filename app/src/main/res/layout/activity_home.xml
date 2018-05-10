@@ -5,7 +5,7 @@
     android:id="@+id/home_navigation_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="udacity.designvilla.HomeActivity">
+    tools:context="udacity.designvilla.HomeActivity" >
 
     <FrameLayout
         android:id="@+id/main_layout"
@@ -15,9 +15,10 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/tool_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
             android:background="@color/colorPrimary"
             android:theme="@style/AppTheme"
+            android:elevation="5dp"
             app:titleTextColor="@android:color/white" />
 
     </FrameLayout>
@@ -27,13 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorWhite"
         android:fitsSystemWindows="true"
         android:layoutDirection="ltr"
         app:arc_cropDirection="cropInside"
         app:arc_width="@dimen/arc_width"
         app:headerLayout="@layout/drawer_header"
-        app:itemIconTint="@drawable/drawer_icon_color"
         app:menu="@menu/drawer_options" />
 
 

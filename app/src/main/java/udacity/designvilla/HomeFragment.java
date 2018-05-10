@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.android.splashscreenjava.R;
-
 public class HomeFragment extends Fragment {
 
     //TODO: Implement main logic for firebase realtime database

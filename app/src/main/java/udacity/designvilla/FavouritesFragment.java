@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.android.splashscreenjava.R;
-
 public class FavouritesFragment extends Fragment {
 
     //TODO:Implement Favourites for firebsae realtime database
