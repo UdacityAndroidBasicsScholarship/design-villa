@@ -51,15 +51,6 @@ public class HomeFragment extends Fragment {
 
         mFirebaseAdapter = new HomeAdapter(UserId.class,R.layout.image_list_item,HomeHolder.class,
                 mdbReference,getActivity());
-        /*mFirebaseAdapter = new FirebaseRecyclerAdapter<UserId, FirebaseHomeViewHolder>
-                (UserId.class, R.layout.image_list_item, FirebaseHomeViewHolder.class,
-                        mdbReference) {
-            @Override
-            protected void populateViewHolder(FirebaseHomeViewHolder viewHolder,
-                                              UserId model, int position) {
-                viewHolder.bindImages(model);
-            }
-        };*/
         recyclerView.setHasFixedSize(true);
         gaggeredGridLayoutManager = new StaggeredGridLayoutManager(3, 1);
         recyclerView.setLayoutManager(gaggeredGridLayoutManager);
