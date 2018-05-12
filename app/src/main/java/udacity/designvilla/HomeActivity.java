@@ -135,18 +135,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (mUser == null) {
-            Intent loginIntent = new Intent(HomeActivity.this, LoginActivity.class);
-            startActivity(loginIntent);
-            finish();
-        }
-
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
