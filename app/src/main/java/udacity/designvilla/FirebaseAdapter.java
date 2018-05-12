@@ -71,6 +71,7 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
                 intent.putExtra("image_url",holder.mItem.getImage_url());
                 intent.putExtra("xml",holder.mItem.getXml());
                 intent.putExtra("likes",holder.mItem.getLikes());
+                intent.putExtra("layout_uid",holder.mUID);
                 context.startActivity(intent);
             }
         });
