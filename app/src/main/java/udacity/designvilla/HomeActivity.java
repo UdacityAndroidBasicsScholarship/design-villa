@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
         FragmentTransaction tx = getFragmentManager().beginTransaction();
-        tx.replace(R.id.main_layout, new HomeFragment());
+        tx.replace(R.id.replaceable, new HomeFragment());
         tx.commit();
 
 
@@ -124,7 +124,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.main_layout, fragment);
+                transaction.replace(R.id.replaceable, fragment);
                 transaction.commit();
                 //close the navigation bar when clicked
                 mDrawerLayout.closeDrawers();

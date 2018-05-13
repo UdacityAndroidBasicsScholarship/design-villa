@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<DesignModel> items;
     private ArrayList<String> itemsUID;
     private FirebaseAdapter mAdapter;
+    private RecyclerView recyclerView;
 
     public HomeFragment() {
     }
@@ -37,18 +38,18 @@ public class HomeFragment extends Fragment {
         firebaseDatabase = FirebaseDatabase.getInstance();
         items = new ArrayList<>();
         itemsUID = new ArrayList<>();
+        recyclerView = getActivity().findViewById(R.id.list);
+        mAdapter = new FirebaseAdapter(items, itemsUID,getActivity().getApplicationContext());
+        getDesignItems();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item_list, container, false);
-        RecyclerView recyclerView = (RecyclerView) view;
+        recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_item_list, container, false);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
-        mAdapter = new FirebaseAdapter(items, itemsUID,getActivity().getApplicationContext());
         recyclerView.setAdapter(mAdapter);
-        getDesignItems();
-        return view;
+        return (View) recyclerView;
     }
 
     public void getDesignItems(){
