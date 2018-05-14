@@ -32,6 +32,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/fabric/res/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/google-services/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/debug" type="java-resource" />
@@ -99,6 +100,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
@@ -112,6 +114,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/reports" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
@@ -123,6 +126,7 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage-15.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-core-2.6.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-connection-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview-2.2.0" level="project" />
@@ -142,6 +146,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:design-27.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:monitor-1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta-1.2.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric.sdk.android:fabric-1.4.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-15.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-15.0.1" level="project" />
@@ -157,6 +163,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-2.9.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage-common-15.0.2" level="project" />
@@ -181,5 +188,6 @@
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.7.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-flags-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:answers-1.4.1" level="project" />
   </component>
 </module>
