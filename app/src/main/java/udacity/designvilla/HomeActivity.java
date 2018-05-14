@@ -28,7 +28,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.rom4ek.arcnavigationview.ArcNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import udacity.designvilla.fragments.FavouritesFragment;
@@ -42,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     WebView web_git;
     private DrawerLayout mDrawerLayout;
-    private ArcNavigationView mNavigationView;
+    private NavigationView mNavigationView;
     private Toolbar mToolbar;
     private FirebaseUser mUser;
 
