@@ -14,9 +14,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.android.splashscreenjava.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -36,9 +41,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         mDrawerLayout = findViewById(R.id.home_navigation_layout);
         mNavigationView = findViewById(R.id.home_navigation_view);
+        setProfileInfoToNavHeader(); //Sets Profile Name, Email and Photo to Nav Header
 
         mToolbar = findViewById(R.id.tool_bar);
         setSupportActionBar(mToolbar);
@@ -103,14 +108,14 @@ public class HomeActivity extends AppCompatActivity {
 
                         // Setting Positive "Yes" Button
                         alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int which) {
+                            public void onClick(DialogInterface dialog, int which) {
 
                             }
                         });
 
                         // Setting Negative "NO" Button
                         alertDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,	int which) {
+                            public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
                         });
@@ -142,5 +147,29 @@ public class HomeActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setProfileInfoToNavHeader() {
+        String profileEmail;
+        String profileName;
+        String photoUrl;
+        try {
+            Bundle profileBundle = getIntent().getExtras();
+            profileEmail = profileBundle.getString("profileEmail");
+            profileName = profileBundle.getString("profileName");
+            photoUrl = profileBundle.getString("photoUrl");
+
+            //Setting profile detail onto Views
+            View drawerHeader = mNavigationView.getHeaderView(0);
+            TextView profileEmailTextView = drawerHeader.findViewById(R.id.profile_email);
+            profileEmailTextView.setText(profileEmail);
+            TextView profileNameTextView = drawerHeader.findViewById(R.id.profile_name);
+            profileNameTextView.setText(profileName);
+            ImageView profileImageView = drawerHeader.findViewById(R.id.profile_image);
+            Glide.with(this).load(photoUrl).into(profileImageView);
+
+        } catch (NullPointerException e) {
+            Log.d("Bundle Empty", e.toString());
+        }
     }
 }

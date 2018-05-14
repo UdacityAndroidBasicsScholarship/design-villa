@@ -38,6 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Intent intent;
                 if (mUser != null) {
                     intent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+                    intent = LoginActivity.packProfileBundle(mUser, intent); //Packs profileName, profileEmail and PhotoUrl
                 } else {
                     intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 }
