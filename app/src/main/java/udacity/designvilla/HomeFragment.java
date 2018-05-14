@@ -47,9 +47,11 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_item_list, container, false);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.getRecycledViewPool().clear();
+        recyclerView.setItemAnimator(null);
         recyclerView.setAdapter(mAdapter);
-        return (View) recyclerView;
+        return recyclerView;
     }
 
     public void getDesignItems(){
@@ -60,6 +62,7 @@ public class HomeFragment extends Fragment {
                     itemsUID.add((snapshot.getKey()));
                     items.add(snapshot.getValue(DesignModel.class));
                 }
+                recyclerView.getRecycledViewPool().clear();
                 mAdapter.notifyDataSetChanged();
             }
 

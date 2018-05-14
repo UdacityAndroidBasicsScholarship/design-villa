@@ -50,6 +50,7 @@
                     android:layout_height="match_parent"
                     android:fillViewport="true">
 
+
                     <br.tiagohm.codeview.CodeView
                         android:id="@+id/code_view"
                         android:layout_width="match_parent"
@@ -60,6 +61,7 @@
                         app:cv_start_line_number="0"
                         app:cv_zoom_enable="true">
                     </br.tiagohm.codeview.CodeView>
+
                 </ScrollView>
             </android.support.v7.widget.CardView>
         </RelativeLayout>
