@@ -7,21 +7,18 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.webkit.WebView;
-import android.support.v7.widget.Toolbar;
 import android.webkit.WebViewClient;
-import android.widget.ImageView;
 
 public class GitWebView extends AppCompatActivity {
 
-    private String url = "https://github.com/UdacityAndroidBasicsScholarship/design-villa";
-
     WebView web_git;
+    private String url = "https://github.com/UdacityAndroidBasicsScholarship/design-villa";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +28,7 @@ public class GitWebView extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        if(getSupportActionBar() != null) {
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.close);
         }
@@ -120,7 +117,6 @@ public class GitWebView extends AppCompatActivity {
         intent_git.setData(Uri.parse(url));
         startActivity(intent_git);
     }
-
 
 
 }

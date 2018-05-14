@@ -6,11 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -22,14 +18,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
-import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,20 +31,19 @@ import com.google.firebase.auth.FirebaseUser;
 import com.rom4ek.arcnavigationview.ArcNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import udacity.designvilla.fragments.FavouritesFragment;
+import udacity.designvilla.fragments.HomeFragment;
 
 public class HomeActivity extends AppCompatActivity {
-
-    private DrawerLayout mDrawerLayout;
-    private ArcNavigationView mNavigationView;
-    private Toolbar mToolbar;
 
     TextView username;
     TextView useremail;
     CircleImageView user_pic;
-
     ActionBarDrawerToggle toggle;
     WebView web_git;
-
+    private DrawerLayout mDrawerLayout;
+    private ArcNavigationView mNavigationView;
+    private Toolbar mToolbar;
     private FirebaseUser mUser;
 
     @Override
@@ -97,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
         Uri uri_profile;
         mUser = mAuth.getCurrentUser();
 
-        if(mUser != null) {
+        if (mUser != null) {
 
             name = mUser.getDisplayName();
             username.setText(name);
@@ -198,7 +189,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.sign_out:
                         //TODO:Implement Signout dialog
-                        final AlertDialog.Builder alertDialog_out = new AlertDialog.Builder (HomeActivity.this);
+                        final AlertDialog.Builder alertDialog_out = new AlertDialog.Builder(HomeActivity.this);
                         // Setting Dialog Title
                         alertDialog_out.setTitle("Signout Alert");
 
@@ -265,10 +256,9 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if(mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else {
+        } else {
             super.onBackPressed();
         }
     }

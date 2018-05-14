@@ -27,6 +27,8 @@
     <string name="nav_close">Close</string>
 
     <string name="save">Save</string>
+    <string name="layout_image">Layout Screenshot</string>
+    <string name="like_button">Like Button</string>
 
 
 </resources>

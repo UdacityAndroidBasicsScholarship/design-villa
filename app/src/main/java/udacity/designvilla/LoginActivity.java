@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-import udacity.designvilla.Util.SystemBarColorScheme;
+import udacity.designvilla.util.SystemBarColorScheme;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -34,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseUser mUser;
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
-
 
 
     @Override

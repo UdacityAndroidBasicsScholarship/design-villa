@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import udacity.designvilla.Util.SystemBarColorScheme;
+import udacity.designvilla.util.SystemBarColorScheme;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
