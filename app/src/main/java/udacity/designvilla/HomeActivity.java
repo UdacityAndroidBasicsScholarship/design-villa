@@ -110,7 +110,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         final FragmentTransaction tx = getFragmentManager().beginTransaction();
-        tx.replace(R.id.main_layout, new HomeFragment());
+        tx.replace(R.id.replaceable, new HomeFragment());
         tx.commit();
 
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -254,7 +254,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.main_layout, fragment);
+                transaction.replace(R.id.replaceable, fragment);
                 transaction.commit();
                 //close the navigation bar when clicked
                 mDrawerLayout.closeDrawers();
@@ -273,18 +273,6 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (mUser == null) {
-            Intent loginIntent = new Intent(HomeActivity.this, LoginActivity.class);
-            startActivity(loginIntent);
-            finish();
-        }
-
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
