@@ -25,30 +25,6 @@
             android:icon="@drawable/ic_rate" />
     </group>
 
-    <group
-        android:checkableBehavior="single"
-        android:id="@+id/group_middle" >
-
-        <item
-            android:id="@+id/account"
-            android:title="@string/accounts"
-            android:icon="@drawable/ic_account" />
-        <item
-            android:id="@+id/settings"
-            android:title="@string/settings"
-            android:icon="@drawable/ic_settings" />
-
-
-        <item
-            android:id="@+id/help"
-            android:title="@string/help"
-            android:icon="@drawable/ic_help" />
-        <item
-            android:id="@+id/contact"
-            android:title="@string/contact_us"
-            android:icon="@drawable/ic_contacts" />
-    </group>
-
     <group android:id="@+id/group_out"
            android:checkableBehavior="single" >
 
