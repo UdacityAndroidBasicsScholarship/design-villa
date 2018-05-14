@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_home_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_favorite_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,9 +29,9 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="color" value="22e215" />
-                            <entry key="outputName" value="ic_account" />
-                            <entry key="sourceFile" value="C:\Users\rohit\Downloads\account.svg" />
+                            <entry key="color" value="ff130c" />
+                            <entry key="outputName" value="ic_rate" />
+                            <entry key="sourceFile" value="C:\Users\rohit\Downloads\star.svg" />
                           </map>
                         </option>
                       </PersistentState>
