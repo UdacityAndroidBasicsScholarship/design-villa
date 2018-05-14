@@ -3,4 +3,5 @@
     <dimen name="arc_width">96dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
     <dimen name="eight_dips">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>
