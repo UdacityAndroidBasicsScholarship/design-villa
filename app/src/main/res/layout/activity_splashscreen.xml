@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mmv"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +22,6 @@
         android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
-        android:src="@mipmap/ic_launcher_foreground"
         android:cropToPadding="true"
         android:transitionName="@string/transition_element"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,9 +63,9 @@
 
     <TextView
         android:id="@+id/developers"
-        android:layout_width="215dp"
-        android:layout_height="17dp"
         android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/sixteen_dips"
         android:layout_marginStart="@dimen/sixteen_dips"
         android:text="@string/dev_credits"
