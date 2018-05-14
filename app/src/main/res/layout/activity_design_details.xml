@@ -11,13 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/tool_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:theme="@style/AppTheme"
-        app:titleTextColor="@android:color/white" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme"
+            app:titleTextColor="@android:color/white" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -31,10 +31,10 @@
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
-                    <ImageView
-                        android:id="@+id/design_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/design_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
             </android.support.v7.widget.CardView>
 
@@ -50,10 +50,18 @@
                     android:layout_height="match_parent"
                     android:fillViewport="true">
 
-                <io.github.kbiakov.codeview.CodeView
-                    android:id="@+id/code_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+
+                    <br.tiagohm.codeview.CodeView
+                        android:id="@+id/code_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cv_font_size="14"
+                        app:cv_highlight_line_number="36"
+                        app:cv_show_line_number="true"
+                        app:cv_start_line_number="0"
+                        app:cv_zoom_enable="true">
+                    </br.tiagohm.codeview.CodeView>
+
                 </ScrollView>
             </android.support.v7.widget.CardView>
         </RelativeLayout>
