@@ -42,9 +42,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    String pg_URL;
-    String pg_title;
-
     private DrawerLayout mDrawerLayout;
     private ArcNavigationView mNavigationView;
     private Toolbar mToolbar;
