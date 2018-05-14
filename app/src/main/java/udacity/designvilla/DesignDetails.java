@@ -34,7 +34,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.InputStream;
 
-import io.github.kbiakov.codeview.CodeView;
+import br.tiagohm.codeview.CodeView;
+import br.tiagohm.codeview.Language;
+import br.tiagohm.codeview.Theme;
 
 public class DesignDetails extends AppCompatActivity {
 
@@ -104,7 +106,14 @@ public class DesignDetails extends AppCompatActivity {
         }
     }
     public void setCodeViewText(String code){
-        codeView.setCode(code,"xml");
+        codeView.setTheme(Theme.ANDROIDSTUDIO)
+                .setCode(code)
+                .setLanguage(Language.XML)
+                .setFontSize(14)
+                .setZoomEnabled(true)
+                .setShowLineNumber(true)
+                .setStartLineNumber(9000)
+                .apply();
     }
 
     @Override
