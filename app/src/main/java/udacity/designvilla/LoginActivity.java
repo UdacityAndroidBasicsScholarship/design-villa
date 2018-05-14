@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.android.splashscreenjava.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -24,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-import udacity.designvilla.Util.SystemBarColorScheme;
+import udacity.designvilla.util.SystemBarColorScheme;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -35,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseUser mUser;
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
-
 
 
     @Override
