@@ -27,7 +27,7 @@
         </activity>
         <activity android:name="udacity.designvilla.LoginActivity" />
         <activity android:name="udacity.designvilla.HomeActivity" />
-        <activity android:name="udacity.designvilla.GitWebView" />
+        <activity android:name="udacity.designvilla.GitWebViewActivity" />
         <activity android:name="udacity.designvilla.DesignDetails" />
     </application>
 

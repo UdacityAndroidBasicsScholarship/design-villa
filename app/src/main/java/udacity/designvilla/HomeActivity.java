@@ -126,7 +126,7 @@ public class HomeActivity extends AppCompatActivity {
                             }
                         }, 50);
 
-                        Intent git_intent = new Intent(HomeActivity.this, GitWebView.class);
+                        Intent git_intent = new Intent(HomeActivity.this, GitWebViewActivity.class);
                         startActivity(git_intent);
 
                         break;

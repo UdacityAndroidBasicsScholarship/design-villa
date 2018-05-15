@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class GitWebView extends AppCompatActivity {
+public class GitWebViewActivity extends AppCompatActivity {
 
     WebView web_git;
     private String url = "https://github.com/UdacityAndroidBasicsScholarship/design-villa";
