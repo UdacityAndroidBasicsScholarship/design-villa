@@ -1,4 +1,4 @@
-package udacity.designvilla.Util;
+package udacity.designvilla.util;
 
 import android.app.Activity;
 import android.os.Build;
@@ -11,7 +11,8 @@ public class SystemBarColorScheme {
 
     /**
      * Set the status bar color
-     * @param act- Activity
+     *
+     * @param act-  Activity
      * @param color - Color for the status bar
      */
     public static void setSystemBarColor(Activity act, @ColorRes int color) {
@@ -25,6 +26,7 @@ public class SystemBarColorScheme {
 
     /**
      * Set the status bar light
+     *
      * @param act - Activity
      */
     public static void setSystemBarLight(Activity act) {
