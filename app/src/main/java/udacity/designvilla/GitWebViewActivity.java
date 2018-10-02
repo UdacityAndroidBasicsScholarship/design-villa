@@ -17,7 +17,7 @@ import android.webkit.WebViewClient;
 
 public class GitWebViewActivity extends AppCompatActivity {
 
-    WebView web_git;
+    WebView webGit;
     private String url = "https://github.com/UdacityAndroidBasicsScholarship/design-villa";
 
     @Override
@@ -35,11 +35,11 @@ public class GitWebViewActivity extends AppCompatActivity {
 
         fadeToolbar();
 
-        web_git = findViewById(R.id.webView);
-        web_git.setWebViewClient(new WebViewClient());
-        web_git.getSettings().setJavaScriptEnabled(true);
-        web_git.getSettings().setUserAgentString("Android");
-        web_git.loadUrl(url);
+        webGit = findViewById(R.id.webView);
+        webGit.setWebViewClient(new WebViewClient());
+        webGit.getSettings().setJavaScriptEnabled(true);
+        webGit.getSettings().setUserAgentString("Android");
+        webGit.loadUrl(url);
     }
 
     private void fadeToolbar() {
@@ -82,8 +82,8 @@ public class GitWebViewActivity extends AppCompatActivity {
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
             switch (keyCode) {
                 case KeyEvent.KEYCODE_BACK:
-                    if (web_git.canGoBack()) {
-                        web_git.goBack();
+                    if (webGit.canGoBack()) {
+                        webGit.goBack();
                     } else {
                         finish();
                     }
@@ -111,11 +111,11 @@ public class GitWebViewActivity extends AppCompatActivity {
     }
 
     public void git_repo(MenuItem item) {
-        Intent intent_git = new Intent();
-        intent_git.setAction(Intent.ACTION_VIEW);
-        intent_git.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent_git.setData(Uri.parse(url));
-        startActivity(intent_git);
+        Intent intentGit = new Intent();
+        intentGit.setAction(Intent.ACTION_VIEW);
+        intentGit.addCategory(Intent.CATEGORY_BROWSABLE);
+        intentGit.setData(Uri.parse(url));
+        startActivity(intentGit);
     }
 
 
