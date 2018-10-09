@@ -45,6 +45,7 @@ public class DesignDetails extends AppCompatActivity {
     private DatabaseReference reference;
     private CodeView codeView;
     private Menu menu;
+    private boolean isFavourite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,7 @@ public class DesignDetails extends AppCompatActivity {
         reference = database.getReference().child("favourites").child(user.getUid());
 
         checkFavourite();
+        setFavourite();
 
         codeView = findViewById(R.id.code_view);
         Glide.with(getApplicationContext())
@@ -135,40 +137,49 @@ public class DesignDetails extends AppCompatActivity {
     }
 
     public void addToFavourites() {
-        reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-                    Toast.makeText(getApplicationContext(), "Added to favourites", Toast.LENGTH_SHORT).show();
-                } else {
-                    Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+        if(!isFavourite)
+            reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        setIsFavourite(true);
+                        setFavourite();
+                        Toast.makeText(getApplicationContext(), "Added to favourites", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+                    }
                 }
-            }
-        });
+            });
+        else
+            Toast.makeText(getApplicationContext(), "This layout is already present in your favourites", Toast.LENGTH_SHORT).show();
     }
 
     public void checkFavourite() {
         ValueEventListener eventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                boolean flag = false;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String id = Objects.requireNonNull(snapshot.getValue()).toString();
-                    if (id.equals(layoutUID)) {
-                        setFavourite();
-                    }
+                    if (id.equals(layoutUID))
+                        flag = true;
                 }
+                setIsFavourite(flag);
             }
-
             @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
+            public void onCancelled(DatabaseError databaseError) {}
         };
         reference.addListenerForSingleValueEvent(eventListener);
     }
 
     public void setFavourite() {
-        menu.getItem(0).setIcon(R.drawable.ic_star);
-        menu.getItem(0).setEnabled(false);
+        if(isFavourite) {
+            menu.getItem(0).setIcon(R.drawable.ic_star);
+            menu.getItem(0).setEnabled(false);
+        }
+    }
+
+    public void setIsFavourite(boolean flag){
+        isFavourite = flag;
     }
 }
