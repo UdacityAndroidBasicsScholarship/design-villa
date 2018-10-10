@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -45,6 +47,7 @@ public class DesignDetails extends AppCompatActivity {
     private DatabaseReference reference;
     private CodeView codeView;
     private Menu menu;
+    private boolean isFavourite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +70,17 @@ public class DesignDetails extends AppCompatActivity {
         checkFavourite();
 
         codeView = findViewById(R.id.code_view);
+
+        RequestOptions requestOptions = new RequestOptions()
+                .placeholder(R.drawable.default_placeholder)
+                .error(R.drawable.ic_error);
+
         Glide.with(getApplicationContext())
                 .load(Uri.parse(getIntent().getStringExtra("image_url")))
+                .apply(requestOptions)
+                .transition(DrawableTransitionOptions.withCrossFade())
                 .into((ImageView) findViewById(R.id.design_image));
+
         StorageReference storageReference = firebaseStorage.getReferenceFromUrl(getIntent().getStringExtra("xml"));
         Log.d("Storage Reference", storageReference.getName());
         try {
@@ -135,40 +146,51 @@ public class DesignDetails extends AppCompatActivity {
     }
 
     public void addToFavourites() {
-        reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-                    Toast.makeText(getApplicationContext(), "Added to favourites", Toast.LENGTH_SHORT).show();
-                } else {
-                    Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+        if(!isFavourite)
+            reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        setIsFavourite(true);
+                        setFavourite();
+                        Toast.makeText(getApplicationContext(), "Added to favourites", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+                    }
                 }
-            }
-        });
+            });
+        else
+            Toast.makeText(getApplicationContext(), "This layout is already present in your favourites", Toast.LENGTH_SHORT).show();
     }
 
     public void checkFavourite() {
         ValueEventListener eventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                boolean flag = false;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String id = Objects.requireNonNull(snapshot.getValue()).toString();
                     if (id.equals(layoutUID)) {
-                        setFavourite();
+                        flag = true;
                     }
                 }
+                setIsFavourite(flag);
+                setFavourite();
             }
-
             @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
+            public void onCancelled(DatabaseError databaseError) {}
         };
         reference.addListenerForSingleValueEvent(eventListener);
     }
 
     public void setFavourite() {
-        menu.getItem(0).setIcon(R.drawable.ic_star);
-        menu.getItem(0).setEnabled(false);
+        if(isFavourite) {
+            menu.getItem(0).setIcon(R.drawable.ic_star);
+            menu.getItem(0).setEnabled(false);
+        }
+    }
+
+    public void setIsFavourite(boolean flag){
+        isFavourite = flag;
     }
 }
