@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -59,7 +61,16 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
                 firebaseDatabase.getReference().child("database").child(holder.mUID).child("likes").setValue(n);
             }
         });
-        Glide.with(context).load(Uri.parse(holder.mItem.getImage_url())).into(holder.mDesign);
+        RequestOptions requestOptions = new RequestOptions()
+                .placeholder(R.drawable.default_placeholder)
+                .error(R.drawable.ic_error)
+                .override(holder.mDesign.getWidth());
+
+        Glide.with(context)
+                .load(Uri.parse(holder.mItem.getImage_url()))
+                .apply(requestOptions)
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(holder.mDesign);
 
 
         holder.mDesign.setOnClickListener(new View.OnClickListener() {
