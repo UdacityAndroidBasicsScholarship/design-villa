@@ -37,9 +37,9 @@ public class HomeActivity extends AppCompatActivity {
 
     TextView username;
     TextView useremail;
-    CircleImageView user_pic;
+    CircleImageView userPic;
     ActionBarDrawerToggle toggle;
-    WebView web_git;
+    WebView webGit;
     private DrawerLayout mDrawerLayout;
     private NavigationView mNavigationView;
     private Toolbar mToolbar;
@@ -58,10 +58,10 @@ public class HomeActivity extends AppCompatActivity {
 
         username = navHeader.findViewById(R.id.textView8);
         useremail = navHeader.findViewById(R.id.textView9);
-        user_pic = navHeader.findViewById(R.id.profile_image);
+        userPic = navHeader.findViewById(R.id.profile_image);
 
         mToolbar = findViewById(R.id.tool_bar);
-        web_git = findViewById(R.id.webView);
+        webGit = findViewById(R.id.webView);
 
         setSupportActionBar(mToolbar);
 
@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
 
         final String name;
         String email;
-        Uri uri_profile;
+        Uri uriProfile;
         mUser = mAuth.getCurrentUser();
 
         if (mUser != null) {
@@ -95,8 +95,8 @@ public class HomeActivity extends AppCompatActivity {
             email = mUser.getEmail();
             useremail.setText(email);
 
-            uri_profile = mUser.getPhotoUrl();
-            Glide.with(this).load(uri_profile).into(user_pic);
+            uriProfile = mUser.getPhotoUrl();
+            Glide.with(this).load(uriProfile).into(userPic);
         }
 
         final FragmentTransaction tx = getFragmentManager().beginTransaction();
@@ -126,80 +126,80 @@ public class HomeActivity extends AppCompatActivity {
                             }
                         }, 50);
 
-                        Intent git_intent = new Intent(HomeActivity.this, GitWebViewActivity.class);
-                        startActivity(git_intent);
+                        Intent gitIntent = new Intent(HomeActivity.this, GitWebViewActivity.class);
+                        startActivity(gitIntent);
 
                         break;
 
                     case R.id.rate:
                         //TODO:Implement rating  dialog
-                        AlertDialog.Builder alertDialog_rate = new AlertDialog.Builder(HomeActivity.this);
+                        AlertDialog.Builder alertDialogRate = new AlertDialog.Builder(HomeActivity.this);
 
                         // Setting Dialog Title
-                        alertDialog_rate.setTitle("Notice");
+                        alertDialogRate.setTitle("Notice");
 
                         // Setting Icon to Dialog
-                        alertDialog_rate.setIcon(R.drawable.ic_rate);
+                        alertDialogRate.setIcon(R.drawable.ic_rate);
 
                         // Setting Dialog Message
-                        alertDialog_rate.setMessage("Wanna \u2605 us...\nSoon publishing to Play Store ");
+                        alertDialogRate.setMessage("Wanna \u2605 us...\nSoon publishing to Play Store ");
 
                         // Setting Cancel Button
-                        alertDialog_rate.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
+                        alertDialogRate.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
                             }
                         });
-                        alertDialog_rate.show();
+                        alertDialogRate.show();
                         break;
 
                     case R.id.exit:
 
                         //TODO:Implement exit dialog
-                        final AlertDialog.Builder alertDialog_exit = new AlertDialog.Builder(HomeActivity.this);
+                        final AlertDialog.Builder alertDialogExit = new AlertDialog.Builder(HomeActivity.this);
 
                         // Setting Dialog Title
-                        alertDialog_exit.setTitle("Exit");
+                        alertDialogExit.setTitle("Exit");
 
                         // Setting Icon to Dialog
-                        alertDialog_exit.setIcon(R.drawable.ic_exit);
+                        alertDialogExit.setIcon(R.drawable.ic_exit);
 
                         // Setting Dialog Message
-                        alertDialog_exit.setMessage("Do you really want to exit?");
+                        alertDialogExit.setMessage("Do you really want to exit?");
 
                         // Setting Positive "Yes" Button
-                        alertDialog_exit.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                        alertDialogExit.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 finish();
                             }
                         });
 
                         // Setting Negative "NO" Button
-                        alertDialog_exit.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                        alertDialogExit.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
                         });
 
                         // Showing Alert Message
-                        alertDialog_exit.show();
+                        alertDialogExit.show();
                         break;
 
                     case R.id.sign_out:
                         //TODO:Implement Signout dialog
-                        final AlertDialog.Builder alertDialog_out = new AlertDialog.Builder(HomeActivity.this);
+                        final AlertDialog.Builder alertDialogOut = new AlertDialog.Builder(HomeActivity.this);
                         // Setting Dialog Title
-                        alertDialog_out.setTitle("Signout Alert");
+                        alertDialogOut.setTitle("Signout Alert");
 
                         // Setting Dialog Message
-                        alertDialog_out.setMessage("Do you really want to Signout?");
+                        alertDialogOut.setMessage("Do you really want to Signout?");
 
                         // Setting Icon to Dialog
-                        alertDialog_out.setIcon(R.drawable.ic_signout);
+                        alertDialogOut.setIcon(R.drawable.ic_signout);
 
                         // Setting Positive "Yes" Button
-                        alertDialog_out.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        alertDialogOut.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 FirebaseAuth.getInstance().signOut();
@@ -211,14 +211,14 @@ public class HomeActivity extends AppCompatActivity {
                         });
 
                         // Setting Negative "NO" Button
-                        alertDialog_out.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                        alertDialogOut.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
                         });
 
                         // Showing Alert Message
-                        alertDialog_out.show();
+                        alertDialogOut.show();
                         break;
 
                     case R.id.about:
