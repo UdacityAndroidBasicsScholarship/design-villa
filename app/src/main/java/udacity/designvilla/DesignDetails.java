@@ -68,7 +68,6 @@ public class DesignDetails extends AppCompatActivity {
         reference = database.getReference().child("favourites").child(user.getUid());
 
         checkFavourite();
-        setFavourite();
 
         codeView = findViewById(R.id.code_view);
 
@@ -171,10 +170,12 @@ public class DesignDetails extends AppCompatActivity {
                 boolean flag = false;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String id = Objects.requireNonNull(snapshot.getValue()).toString();
-                    if (id.equals(layoutUID))
+                    if (id.equals(layoutUID)) {
                         flag = true;
+                    }
                 }
                 setIsFavourite(flag);
+                setFavourite();
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {}
