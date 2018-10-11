@@ -1,4 +1,4 @@
-package udacity.designvilla;
+package udacity.designvilla.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.android.splashscreenjava.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,8 +17,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
-import udacity.designvilla.Util.DesignModel;
+import udacity.designvilla.R;
+import udacity.designvilla.model.DesignModel;
+import udacity.designvilla.util.FirebaseAdapter;
 
 public class FavouritesFragment extends Fragment {
 
@@ -27,20 +29,18 @@ public class FavouritesFragment extends Fragment {
     private ArrayList<DesignModel> items;
     private ArrayList<String> itemsUID;
     private FirebaseAdapter mAdapter;
-    private FirebaseAuth firebaseAuth;
     private String userID;
 
-    //TODO:Implement Favourites for firebsae realtime database
-
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         firebaseDatabase = FirebaseDatabase.getInstance();
         items = new ArrayList<>();
         itemsUID = new ArrayList<>();
-        firebaseAuth = FirebaseAuth.getInstance();
-        userID = firebaseAuth.getCurrentUser().getUid();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        userID = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
     }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,20 +48,20 @@ public class FavouritesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_item_list, container, false);
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL));
-        mAdapter = new FirebaseAdapter(items, itemsUID,getActivity().getApplicationContext());
+        mAdapter = new FirebaseAdapter(items, itemsUID, getActivity().getApplicationContext());
         recyclerView.setAdapter(mAdapter);
         getDesignItems();
         return view;
     }
 
-    public void getDesignItems(){
+    public void getDesignItems() {
         final ValueEventListener databaseValueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot:dataSnapshot.getChildren()){
-                    for(String key:itemsUID) {
-                        if(snapshot.getKey().equals(key))
-                        items.add(snapshot.getValue(DesignModel.class));
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    for (String key : itemsUID) {
+                        if (snapshot.getKey().equals(key))
+                            items.add(snapshot.getValue(DesignModel.class));
                     }
                 }
                 mAdapter.notifyDataSetChanged();
@@ -75,8 +75,8 @@ public class FavouritesFragment extends Fragment {
         ValueEventListener favouritesValueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot:dataSnapshot.getChildren()) {
-                    itemsUID.add(snapshot.getValue().toString());
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    itemsUID.add(Objects.requireNonNull(snapshot.getValue()).toString());
                 }
                 firebaseDatabase.getReference().child("database").addListenerForSingleValueEvent(databaseValueEventListener);
             }

@@ -1,4 +1,4 @@
-package udacity.designvilla;
+package udacity.designvilla.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,13 +13,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.android.splashscreenjava.R;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.firebase.database.FirebaseDatabase;
-
-import udacity.designvilla.Util.DesignModel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import udacity.designvilla.DesignDetails;
+import udacity.designvilla.R;
+import udacity.designvilla.model.DesignModel;
 
 
 public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHolder> {
@@ -58,20 +61,28 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
                 firebaseDatabase.getReference().child("database").child(holder.mUID).child("likes").setValue(n);
             }
         });
-        Glide.with(context).load(Uri.parse(holder.mItem.getImage_url())).into(holder.mDesign);
+        RequestOptions requestOptions = new RequestOptions()
+                .placeholder(R.drawable.default_placeholder)
+                .error(R.drawable.ic_error)
+                .override(holder.mDesign.getWidth());
 
+        Glide.with(context)
+                .load(Uri.parse(holder.mItem.getImage_url()))
+                .apply(requestOptions)
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(holder.mDesign);
 
 
         holder.mDesign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,DesignDetails.class);
-                intent.putExtra("author",holder.mItem.getAuthor());
-                intent.putExtra("title",holder.mItem.getTitle());
-                intent.putExtra("image_url",holder.mItem.getImage_url());
-                intent.putExtra("xml",holder.mItem.getXml());
-                intent.putExtra("likes",holder.mItem.getLikes());
-                intent.putExtra("layout_uid",holder.mUID);
+                Intent intent = new Intent(context, DesignDetails.class);
+                intent.putExtra("author", holder.mItem.getAuthor());
+                intent.putExtra("title", holder.mItem.getTitle());
+                intent.putExtra("image_url", holder.mItem.getImage_url());
+                intent.putExtra("xml", holder.mItem.getXml());
+                intent.putExtra("likes", holder.mItem.getLikes());
+                intent.putExtra("layout_uid", holder.mUID);
                 context.startActivity(intent);
             }
         });

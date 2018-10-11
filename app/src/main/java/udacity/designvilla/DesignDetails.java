@@ -1,19 +1,19 @@
 package udacity.designvilla;
 
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.android.splashscreenjava.R;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -32,7 +32,7 @@ import com.google.firebase.storage.StorageReference;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStream;
+import java.util.Objects;
 
 import br.tiagohm.codeview.CodeView;
 import br.tiagohm.codeview.Language;
@@ -40,14 +40,15 @@ import br.tiagohm.codeview.Theme;
 
 public class DesignDetails extends AppCompatActivity {
 
+    String layoutUID;
     private FirebaseStorage firebaseStorage;
     private FirebaseUser user;
     private FirebaseDatabase database;
     private DatabaseReference reference;
     private CodeView codeView;
-    String layoutUID;
-    private boolean isFavourite =false;
     private Menu menu;
+    private boolean isFavourite;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +60,7 @@ public class DesignDetails extends AppCompatActivity {
         layoutUID = getIntent().getStringExtra("layout_uid");
 
         String text = getIntent().getStringExtra("title") + "-" + getIntent().getStringExtra("author");
-        getSupportActionBar().setTitle(text);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(text);
 
         firebaseStorage = FirebaseStorage.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -69,11 +70,19 @@ public class DesignDetails extends AppCompatActivity {
         checkFavourite();
 
         codeView = findViewById(R.id.code_view);
+
+        RequestOptions requestOptions = new RequestOptions()
+                .placeholder(R.drawable.default_placeholder)
+                .error(R.drawable.ic_error);
+
         Glide.with(getApplicationContext())
                 .load(Uri.parse(getIntent().getStringExtra("image_url")))
+                .apply(requestOptions)
+                .transition(DrawableTransitionOptions.withCrossFade())
                 .into((ImageView) findViewById(R.id.design_image));
+
         StorageReference storageReference = firebaseStorage.getReferenceFromUrl(getIntent().getStringExtra("xml"));
-        Log.d("Storage Reference",storageReference.getName());
+        Log.d("Storage Reference", storageReference.getName());
         try {
             final File localFile = File.createTempFile("layout", "xml");
             Toast.makeText(this, localFile.getAbsolutePath(), Toast.LENGTH_SHORT).show();
@@ -82,14 +91,15 @@ public class DesignDetails extends AppCompatActivity {
                 public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                     try {
                         BufferedReader reader = new BufferedReader(new FileReader(localFile));
-                        String line,code="";
-                        while ((line = reader.readLine())!=null){
-                            code = code + line + "\n";
+                        String line;
+                        StringBuilder code = new StringBuilder();
+                        while ((line = reader.readLine()) != null) {
+                            code.append(line).append("\n");
                         }
                         reader.close();
-                        setCodeViewText(code);
+                        setCodeViewText(code.toString());
                         System.out.println(code);
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getApplicationContext(), "Error in", Toast.LENGTH_SHORT).show();
                     }
@@ -97,15 +107,16 @@ public class DesignDetails extends AppCompatActivity {
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception exception) {
-                    Log.e("firebase ",";local tem file not created  created " +exception.toString());
+                    Log.e("firebase ", ";local tem file not created  created " + exception.toString());
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(this, "Error Out", Toast.LENGTH_SHORT).show();
         }
     }
-    public void setCodeViewText(String code){
+
+    public void setCodeViewText(String code) {
         codeView.setTheme(Theme.ANDROIDSTUDIO)
                 .setCode(code)
                 .setLanguage(Language.XML)
@@ -117,16 +128,16 @@ public class DesignDetails extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         this.menu = menu;
-        getMenuInflater().inflate(R.menu.menu_favourites,menu);
+        getMenuInflater().inflate(R.menu.menu_favourites, menu);
         menu.getItem(0).setShowAsAction(1);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.save_to_favourites:
                 item.setIcon(R.drawable.ic_star);
                 addToFavourites();
@@ -134,41 +145,52 @@ public class DesignDetails extends AppCompatActivity {
         return true;
     }
 
-    public void addToFavourites(){
-        reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),"Added to favourites",Toast.LENGTH_SHORT).show();
-                }else {
-                    Log.e("Firebase Error",task.getException().toString());
+    public void addToFavourites() {
+        if(!isFavourite)
+            reference.push().setValue(layoutUID).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        setIsFavourite(true);
+                        setFavourite();
+                        Toast.makeText(getApplicationContext(), "Added to favourites", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+                    }
                 }
-            }
-        });
+            });
+        else
+            Toast.makeText(getApplicationContext(), "This layout is already present in your favourites", Toast.LENGTH_SHORT).show();
     }
 
-    public void checkFavourite(){
+    public void checkFavourite() {
         ValueEventListener eventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot:dataSnapshot.getChildren()){
-                    String id = snapshot.getValue().toString();
-                    if(id.equals(layoutUID)){
-                        setFavourite(true);
+                boolean flag = false;
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    String id = Objects.requireNonNull(snapshot.getValue()).toString();
+                    if (id.equals(layoutUID)) {
+                        flag = true;
                     }
                 }
+                setIsFavourite(flag);
+                setFavourite();
             }
-
             @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
+            public void onCancelled(DatabaseError databaseError) {}
         };
         reference.addListenerForSingleValueEvent(eventListener);
     }
-    public void setFavourite(boolean b){
-        isFavourite = b;
-        menu.getItem(0).setIcon(R.drawable.ic_star);
-        menu.getItem(0).setEnabled(false);
+
+    public void setFavourite() {
+        if(isFavourite) {
+            menu.getItem(0).setIcon(R.drawable.ic_star);
+            menu.getItem(0).setEnabled(false);
+        }
+    }
+
+    public void setIsFavourite(boolean flag){
+        isFavourite = flag;
     }
 }

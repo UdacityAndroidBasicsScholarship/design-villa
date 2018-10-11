@@ -11,32 +11,32 @@
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/tool_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
             android:background="@color/colorPrimary"
+            android:elevation="5dp"
             android:theme="@style/AppTheme"
             app:titleTextColor="@android:color/white" />
+
         <FrameLayout
             android:id="@+id/replaceable"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/tool_bar"/>
+            android:layout_below="@id/tool_bar" />
     </RelativeLayout>
 
-    <com.rom4ek.arcnavigationview.ArcNavigationView
+    <android.support.design.widget.NavigationView
         android:id="@+id/home_navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorWhite"
         android:fitsSystemWindows="true"
         android:layoutDirection="ltr"
-        app:arc_cropDirection="cropInside"
-        app:arc_width="@dimen/arc_width"
         app:headerLayout="@layout/drawer_header"
-        app:itemIconTint="@drawable/drawer_icon_color"
         app:menu="@menu/drawer_options" />
 
 

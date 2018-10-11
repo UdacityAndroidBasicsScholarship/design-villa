@@ -1,7 +1,7 @@
-package udacity.designvilla;
+package udacity.designvilla.fragments;
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -9,18 +9,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.android.splashscreenjava.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import udacity.designvilla.Util.DesignModel;
-
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment {
+import udacity.designvilla.R;
+import udacity.designvilla.model.DesignModel;
+import udacity.designvilla.util.FirebaseAdapter;
 
+public class HomeFragment extends Fragment {
 
 
     private FirebaseDatabase firebaseDatabase;
@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
         items = new ArrayList<>();
         itemsUID = new ArrayList<>();
         recyclerView = getActivity().findViewById(R.id.list);
-        mAdapter = new FirebaseAdapter(items, itemsUID,getActivity().getApplicationContext());
+        mAdapter = new FirebaseAdapter(items, itemsUID, getActivity().getApplicationContext());
         getDesignItems();
     }
 
@@ -47,10 +47,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_item_list, container, false);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
-        recyclerView.getRecycledViewPool().clear();
-        recyclerView.setItemAnimator(null);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemViewCacheSize(20);
         recyclerView.setDrawingCacheEnabled(true);
@@ -59,11 +56,11 @@ public class HomeFragment extends Fragment {
         return recyclerView;
     }
 
-    public void getDesignItems(){
+    public void getDesignItems() {
         ValueEventListener valueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     itemsUID.add((snapshot.getKey()));
                     items.add(snapshot.getValue(DesignModel.class));
                 }

@@ -1,10 +1,11 @@
-package udacity.designvilla.Util;
+package udacity.designvilla.model;
 
 public class DesignModel {
-    private String author,image_url,xml,title;
+    private String author, image_url, xml, title;
     private int likes;
 
-    DesignModel(){}
+    DesignModel() {
+    }
 
     public DesignModel(String author, String image_url, String xml, String title, int likes) {
         this.author = author;
