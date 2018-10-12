@@ -48,7 +48,7 @@ public class FavouritesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_item_list, container, false);
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL));
-        mAdapter = new FirebaseAdapter(items, itemsUID, getActivity().getApplicationContext());
+        mAdapter = new FirebaseAdapter(items, itemsUID,null, getActivity().getApplicationContext());
         recyclerView.setAdapter(mAdapter);
         getDesignItems();
         return view;
