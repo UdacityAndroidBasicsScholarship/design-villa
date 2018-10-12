@@ -5,20 +5,27 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import udacity.designvilla.DesignDetails;
 import udacity.designvilla.R;
@@ -31,11 +38,16 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
     private Context context;
     private FirebaseDatabase firebaseDatabase;
     private ArrayList<String> itemsUID;
+    private ArrayList<String> favoritesUID;
+    private boolean showFavoriteButton;
 
-    public FirebaseAdapter(List<DesignModel> items, ArrayList<String> itemsUID, Context context) {
+    public FirebaseAdapter(List<DesignModel> items, ArrayList<String> itemsUID,
+                           ArrayList<String> favoritesUID, Context context) {
         mValues = items;
         this.context = context;
         this.itemsUID = itemsUID;
+        this.favoritesUID = favoritesUID;
+        showFavoriteButton = favoritesUID != null;
         firebaseDatabase = FirebaseDatabase.getInstance();
     }
 
@@ -53,14 +65,25 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
         holder.mUID = itemsUID.get(position);
         holder.mAuthor.setText(mValues.get(position).getAuthor());
         holder.mContentView.setText(mValues.get(position).getTitle());
-        holder.imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int n = holder.mItem.getLikes() + 1;
-                holder.imageButton.setImageDrawable(v.getResources().getDrawable(R.drawable.ic_like));
-                firebaseDatabase.getReference().child("database").child(holder.mUID).child("likes").setValue(n);
-            }
-        });
+
+        if(showFavoriteButton) {
+            if (favoritesUID.contains(holder.mUID))
+                holder.imageButton.setImageDrawable(holder.imageButton.
+                        getResources().getDrawable(R.drawable.ic_like));
+            holder.imageButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!favoritesUID.contains(holder.mUID))
+                        addToFavorites(holder.mUID);
+                    int n = holder.mItem.getLikes() + 1;
+                    holder.imageButton.setImageDrawable(v.getResources().getDrawable(R.drawable.ic_like));
+                    firebaseDatabase.getReference()
+                            .child("database").child(holder.mUID).child("likes").setValue(n);
+                }
+            });
+        }else
+            holder.imageButton.setVisibility(View.GONE);
+
         RequestOptions requestOptions = new RequestOptions()
                 .placeholder(R.drawable.default_placeholder)
                 .error(R.drawable.ic_error)
@@ -91,6 +114,21 @@ public class FirebaseAdapter extends RecyclerView.Adapter<FirebaseAdapter.ViewHo
     @Override
     public int getItemCount() {
         return mValues.size();
+    }
+
+    private void addToFavorites(String layoutID) {
+        DatabaseReference reference = firebaseDatabase.getReference().child("favourites")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid());
+        reference.push().setValue(layoutID).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(context, "Added to favourites", Toast.LENGTH_SHORT).show();
+                } else {
+                    Log.e("Firebase Error", Objects.requireNonNull(task.getException()).toString());
+                }
+            }
+        });
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
