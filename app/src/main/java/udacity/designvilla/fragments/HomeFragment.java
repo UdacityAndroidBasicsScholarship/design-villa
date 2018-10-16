@@ -9,12 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import udacity.designvilla.R;
 import udacity.designvilla.model.DesignModel;
@@ -28,6 +30,8 @@ public class HomeFragment extends Fragment {
     private ArrayList<String> itemsUID;
     private FirebaseAdapter mAdapter;
     private RecyclerView recyclerView;
+    private String userID;
+    private ArrayList<String> favorites;
 
     public HomeFragment() {
     }
@@ -36,11 +40,14 @@ public class HomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         firebaseDatabase = FirebaseDatabase.getInstance();
+        userID = Objects.requireNonNull(FirebaseAuth.getInstance()).getUid();
         items = new ArrayList<>();
         itemsUID = new ArrayList<>();
+        favorites = new ArrayList<>();
         recyclerView = getActivity().findViewById(R.id.list);
-        mAdapter = new FirebaseAdapter(items, itemsUID, getActivity().getApplicationContext());
+        mAdapter = new FirebaseAdapter(items, itemsUID, favorites, getActivity().getApplicationContext());
         getDesignItems();
+        getFavorites();
     }
 
     @Override
@@ -73,5 +80,21 @@ public class HomeFragment extends Fragment {
             }
         };
         firebaseDatabase.getReference().child("database").addListenerForSingleValueEvent(valueEventListener);
+    }
+
+    public void getFavorites() {
+        ValueEventListener favouritesValueEventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    favorites.add(Objects.requireNonNull(snapshot.getValue()).toString());
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        };
+        firebaseDatabase.getReference().child("favourites").child(userID)
+                .addListenerForSingleValueEvent(favouritesValueEventListener);
     }
 }
